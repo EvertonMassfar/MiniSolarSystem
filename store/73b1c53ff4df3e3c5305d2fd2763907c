@@ -1,0 +1,409 @@
+{
+	"0": {
+		"position": [
+			0,
+			0,
+			-5
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"upright": true
+	},
+	"hierarchy": {
+		"nodeType": "Root",
+		"id": "0",
+		"name": "root",
+		"children": [
+			{
+				"id": "58cb8dff-fd63-4301-a123-5303f08f932f",
+				"name": "Earth.pod0",
+				"nodeType": "Object",
+				"children": [],
+				"parameters": {
+					"type": "262118ee-4129-4bde-9f38-8295353fe055",
+					"layerMode": "full_3d",
+					"cullFaces": "none",
+					"scale": [
+						0.03855,
+						0.03855,
+						0.03855
+					],
+					"materials": [
+						"45af0f71-a880-4a85-a326-0a33acdd3713",
+						"bfabc6c9-c691-4ac9-bce9-7cf39af32b8a",
+						"56e43401-d342-4969-a506-2e1d14c39268",
+						"662a3b66-e6ce-4b1c-a320-05a1a73443da"
+					]
+				},
+				"scriptName": "Earth_pod0"
+			},
+			{
+				"id": "ffbb6d36-3a03-498b-8226-0c44685ca183",
+				"nodeType": "Group",
+				"name": "Materials",
+				"scriptName": "Materials",
+				"parameters": {},
+				"children": [
+					{
+						"id": "45af0f71-a880-4a85-a326-0a33acdd3713",
+						"nodeType": "Material",
+						"name": "Earth",
+						"scriptName": "Earth",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "a93d5afe-d0aa-46f5-86ce-459978853329"
+						},
+						"children": []
+					},
+					{
+						"id": "bfabc6c9-c691-4ac9-bce9-7cf39af32b8a",
+						"nodeType": "Material",
+						"name": "EarthClouds",
+						"scriptName": "EarthClouds",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "fbc1df73-1e5d-400f-b90b-d71c0fdc2f3a"
+						},
+						"children": []
+					},
+					{
+						"id": "56e43401-d342-4969-a506-2e1d14c39268",
+						"nodeType": "Material",
+						"name": "shadow",
+						"scriptName": "shadow",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "2c55691b-bb2e-43c0-b4a1-dc9a4f982abc"
+						},
+						"children": []
+					},
+					{
+						"id": "662a3b66-e6ce-4b1c-a320-05a1a73443da",
+						"nodeType": "Material",
+						"name": "glow",
+						"scriptName": "glow",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "ce3db8ab-a7b3-4d1d-a3cf-e5fc1c41bc2f"
+						},
+						"children": []
+					}
+				]
+			}
+		],
+		"parameters": {
+			"relativeTo": []
+		},
+		"scriptName": "root"
+	},
+	"controllers": [
+		{
+			"id": "1a15edac-f5e5-4b84-ab8c-eee5518a8942",
+			"name": "animations",
+			"elements": [
+				{
+					"id": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+					"name": "full",
+					"overrides": {
+						"58cb8dff-fd63-4301-a123-5303f08f932f": {
+							"animationFrame": [
+								{
+									"t": -1,
+									"v": 0,
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": 0,
+									"i": "linear"
+								},
+								{
+									"t": 41624,
+									"v": 998,
+									"i": "tie"
+								},
+								{
+									"t": 41626,
+									"v": 998
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "591e4f60-37fe-4725-adea-0814b0aa40b6",
+					"toState": "4567a927-3cef-443c-822b-69d2f92d99cf",
+					"length": 41625,
+					"scriptName": "full"
+				},
+				{
+					"id": "591e4f60-37fe-4725-adea-0814b0aa40b6",
+					"name": "",
+					"overrides": {
+						"58cb8dff-fd63-4301-a123-5303f08f932f": {
+							"animationFrame": {
+								"v": 0,
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "4567a927-3cef-443c-822b-69d2f92d99cf",
+					"name": "",
+					"overrides": {
+						"58cb8dff-fd63-4301-a123-5303f08f932f": {
+							"animationFrame": {
+								"v": 998,
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+			"scriptName": "animations"
+		}
+	],
+	"mediaFiles": [
+		{
+			"type": "objectType",
+			"title": "Plane",
+			"id": "Plane",
+			"contentWrapping": null,
+			"etag": "1dd69ff7b38bb4de98db325cb2207801",
+			"scriptName": "Plane"
+		},
+		{
+			"type": "objectType",
+			"title": "Earth.pod",
+			"filename": "b8f40485-e750-4ffd-a0dd-04cb09532215.pod",
+			"id": "262118ee-4129-4bde-9f38-8295353fe055",
+			"contentWrapping": null,
+			"etag": "b5fdaeff4f750543fe172d42964908cb",
+			"scriptName": "Earth_pod",
+			"locations": [
+				"Planets > Earth"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Earth_Texture.jpg",
+			"filename": "53fa7968-7b0e-4531-800f-91011825850e.jpg",
+			"id": "a93d5afe-d0aa-46f5-86ce-459978853329",
+			"contentWrapping": "riff-image",
+			"etag": "9f8456de5960729f7da6c4e9272b3dbb",
+			"scriptName": "Earth_Texture_jpg",
+			"locations": [
+				"Planets > Earth"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "earth_Clouds.png",
+			"filename": "dc970f83-ba1c-4790-a3c6-1c999a599dbc.png",
+			"id": "fbc1df73-1e5d-400f-b90b-d71c0fdc2f3a",
+			"contentWrapping": "riff-image",
+			"etag": "4ecc459d98f24d9eb321d67ce7c023b0",
+			"scriptName": "earth_Clouds_png",
+			"locations": [
+				"Planets > Earth"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "day_night.png",
+			"filename": "4a3b5cd1-07b2-40f7-a116-699a2ac4c18c.png",
+			"id": "2c55691b-bb2e-43c0-b4a1-dc9a4f982abc",
+			"contentWrapping": "riff-image",
+			"etag": "b4323b25f7a4b246189ea8cbdce2970f",
+			"scriptName": "day_night_png",
+			"locations": [
+				"Planets > Earth",
+				"Planets > Moon",
+				"Planets > Mars"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "glow.png",
+			"filename": "f9f41508-ece1-4f35-b979-e5ef4ca9fce3.png",
+			"id": "ce3db8ab-a7b3-4d1d-a3cf-e5fc1c41bc2f",
+			"contentWrapping": "riff-image",
+			"etag": "1f3acac15f1f6f508072acf0b15e8561",
+			"scriptName": "glow_png",
+			"locations": [
+				"Planets > Earth"
+			],
+			"inUse": true
+		}
+	],
+	"symbolDefinitions": [],
+	"exports": {
+		"7c43228a-0693-4784-8967-e9019dc62b99": {
+			"name": "animations",
+			"forwardId": "1a15edac-f5e5-4b84-ab8c-eee5518a8942",
+			"type": "ControllerValue",
+			"forwardParameter": "active",
+			"defaultValue": {
+				"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+				"t": 0
+			},
+			"scriptName": "animations"
+		}
+	},
+	"attachmentPoints": [],
+	"constructionProperties": {
+		"node": {
+			"id": "58cb8dff-fd63-4301-a123-5303f08f932f",
+			"name": "Earth.pod0"
+		},
+		"textures": [
+			"Earth_Texture.jpg",
+			"earth_Clouds.png",
+			"day_night.png",
+			"glow.png"
+		],
+		"animations": {
+			"totalFrames": 999,
+			"defaultStart": 0,
+			"defaultEnd": 998,
+			"data": [
+				{
+					"id": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+					"title": "full",
+					"start": 0,
+					"end": 998,
+					"fps": 24
+				}
+			]
+		},
+		"bounds": {
+			"scale": 0.03855,
+			"original": [
+				[
+					-23.6096,
+					-21.3076,
+					-23.48
+				],
+				[
+					23.6861,
+					25.9415,
+					23.5566
+				]
+			]
+		},
+		"nodeTree": {
+			"ID": -1,
+			"parentID": -2,
+			"name": "SceenRoot",
+			"children": [
+				{
+					"ID": 0,
+					"parentID": -1,
+					"name": "persp",
+					"children": []
+				},
+				{
+					"ID": 1,
+					"parentID": -1,
+					"name": "group1",
+					"children": []
+				}
+			]
+		},
+		"exposedNodes": []
+	},
+	"notes": {
+		"content": "",
+		"showOnSymbolOpen": false
+	},
+	"symbolProperties": {
+		"editorVersion": 12,
+		"backgroundColor": [
+			1,
+			0.45,
+			0.45,
+			1
+		],
+		"objectColours": {
+			"0": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"58cb8dff-fd63-4301-a123-5303f08f932f": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"ffbb6d36-3a03-498b-8226-0c44685ca183": [
+				0.6000000000000001,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"45af0f71-a880-4a85-a326-0a33acdd3713": [
+				0.8,
+				0.8,
+				0.4,
+				1
+			],
+			"bfabc6c9-c691-4ac9-bce9-7cf39af32b8a": [
+				0.4,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"56e43401-d342-4969-a506-2e1d14c39268": [
+				0.4,
+				0.8,
+				0.4,
+				1
+			],
+			"662a3b66-e6ce-4b1c-a320-05a1a73443da": [
+				0.8,
+				0.6000000000000001,
+				0.4,
+				1
+			]
+		}
+	},
+	"share": {},
+	"collapsed": {
+		"-1-base": false
+	},
+	"selectedTargetId": "0"
+}

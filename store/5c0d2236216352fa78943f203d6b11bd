@@ -1,0 +1,4460 @@
+{
+	"hierarchy": {
+		"nodeType": "Root",
+		"id": "0",
+		"name": "root",
+		"children": [
+			{
+				"id": "f2dbe1ef-80cf-4442-8e00-5b6ff73d1c14",
+				"name": "target",
+				"nodeType": "Target",
+				"children": [
+					{
+						"id": "9cb7774e-cc1b-4dc2-854f-d0dc82602c51",
+						"name": "Solar System",
+						"nodeType": "Group",
+						"children": [
+							{
+								"id": "59f75a4d-4c1d-4982-935c-4f025ade79a9",
+								"name": "Universe Platform",
+								"children": [],
+								"parameters": {
+									"materials": [
+										"8f4304de-f2cf-403d-874f-96ca61ddeb9b"
+									],
+									"type": "plane",
+									"layerMode": "overlay",
+									"scale": [
+										1.5,
+										1.5,
+										1
+									],
+									"position": [
+										0,
+										0,
+										-0.383142
+									]
+								},
+								"nodeType": "Object",
+								"scriptName": "Universe_Platform"
+							},
+							{
+								"id": "69ed4d02-dcfc-445c-9ca9-136316ad1c4b",
+								"name": "Sun",
+								"nodeType": "Group",
+								"children": [
+									{
+										"id": "cf00addb-f456-4260-b910-76b989e65ec2",
+										"name": "Sun",
+										"nodeType": "Subsymbol",
+										"children": [],
+										"parameters": {
+											"symbolDefinition": "Sun",
+											"rotation": [
+												90,
+												0,
+												0
+											],
+											"scale": [
+												0.4,
+												0.4,
+												0.4
+											],
+											"animations": {
+												"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+												"t": 0
+											}
+										},
+										"scriptName": "Sun0"
+									},
+									{
+										"id": "4cff4241-fb5a-43b4-a674-28e167db4724",
+										"name": "hotspotBillboard",
+										"nodeType": "Billboard",
+										"children": [
+											{
+												"id": "654ad9c3-76d7-4629-9e3a-5c52a5da1b59",
+												"name": "sunHotspot",
+												"children": [],
+												"parameters": {
+													"type": "plane",
+													"layerMode": "overlay",
+													"scale": [
+														0.28093662647938344,
+														0.28093662647938344,
+														0.28093662647938344
+													],
+													"visible": true
+												},
+												"nodeType": "Object",
+												"scriptName": "sunHotspot",
+												"actions": [
+													{
+														"eventName": "Tap",
+														"rootStatement": {
+															"id": "48619dfb-4b69-4774-91a8-ddd8435c3a9b",
+															"type": "Block",
+															"statements": [
+																{
+																	"id": "0651c65f-e2fe-48b7-a38c-97a6abf364dd",
+																	"type": "ActivateState",
+																	"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+																	"stateId": "491cb057-29d7-47e9-bd3f-e6820b55b4af"
+																}
+															]
+														}
+													}
+												]
+											},
+											{
+												"id": "7fcc9f56-8135-432d-bafe-b39697ecc431",
+												"name": "sunHotspotClose",
+												"children": [],
+												"parameters": {
+													"type": "plane",
+													"layerMode": "overlay",
+													"scale": [
+														0.28093662647938344,
+														0.28093662647938344,
+														0.28093662647938344
+													],
+													"visible": true,
+													"enabled": false
+												},
+												"nodeType": "Object",
+												"scriptName": "sunHotspotClose",
+												"actions": [
+													{
+														"eventName": "Tap",
+														"rootStatement": {
+															"id": "2ff88316-c664-46fe-8035-dc8d3a07207f",
+															"type": "Block",
+															"statements": [
+																{
+																	"id": "2bd2ebd2-0baf-44a4-8f14-0e8703bc423c",
+																	"type": "ActivateState",
+																	"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+																	"stateId": "7a683d1a-c264-4a42-9915-f61e43bba937"
+																}
+															]
+														}
+													}
+												]
+											}
+										],
+										"parameters": {
+											"visible": false
+										},
+										"scriptName": "hotspotBillboard"
+									},
+									{
+										"id": "4da433e2-c7e8-4cb2-869e-08b60723c92a",
+										"name": "billboardFix",
+										"nodeType": "Group",
+										"children": [
+											{
+												"id": "d7194f0f-4fb0-4859-bb48-26954d168aa2",
+												"name": "billboard",
+												"nodeType": "Billboard",
+												"children": [
+													{
+														"id": "6c8f2cd2-3d3a-4280-a4cb-d652579f632b",
+														"name": "-90 Sun",
+														"nodeType": "Group",
+														"children": [
+															{
+																"id": "224ee1c6-35fc-407d-ba5e-d5689ae50463",
+																"name": "Sun UI",
+																"nodeType": "Group",
+																"children": [
+																	{
+																		"id": "2291c8ae-3673-4ba7-a4ba-596388437d13",
+																		"name": "Sun Info Shadow.png0",
+																		"children": [],
+																		"parameters": {
+																			"materials": [
+																				"bfd6d139-0fb1-4049-8659-c1486aa08ab5"
+																			],
+																			"type": "plane",
+																			"layerMode": "overlay",
+																			"scale": [
+																				1.89,
+																				1,
+																				1
+																			],
+																			"color": [
+																				1,
+																				1,
+																				1,
+																				0.25
+																			]
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "Sun_InfoShadow_png0"
+																	},
+																	{
+																		"id": "22d1094c-7416-4baf-a703-069bad94c997",
+																		"name": "Sun Info.png0",
+																		"children": [],
+																		"parameters": {
+																			"materials": [
+																				"0b91f61d-a724-43fd-aff4-ab27ed9e57d9"
+																			],
+																			"type": "plane",
+																			"layerMode": "overlay",
+																			"scale": [
+																				1.89,
+																				1,
+																				1
+																			]
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "Sun_Info_png0"
+																	}
+																],
+																"parameters": {
+																	"rotation": [
+																		45,
+																		0,
+																		0
+																	],
+																	"position": [
+																		0,
+																		-0.55,
+																		-0.15
+																	],
+																	"scale": [
+																		0.25,
+																		0.25,
+																		0.25
+																	]
+																},
+																"scriptName": "Sun_UI"
+															},
+															{
+																"id": "c5329452-21db-4302-bb19-2d8e93afb1fb",
+																"name": "Sun Info UI",
+																"nodeType": "Group",
+																"children": [
+																	{
+																		"id": "399ecd51-b392-4d02-a48c-28b9eea6faca",
+																		"name": "Info Icon Shadow.png0",
+																		"children": [],
+																		"parameters": {
+																			"materials": [
+																				"b42cdd05-7aa4-49fd-8aa5-5d0a0eb04d88"
+																			],
+																			"type": "plane",
+																			"layerMode": "test_3d",
+																			"scale": [
+																				0.68,
+																				1,
+																				1
+																			],
+																			"renderSorted": true,
+																			"color": [
+																				1,
+																				1,
+																				1,
+																				0.25
+																			]
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "Info_IconShadow_png0"
+																	},
+																	{
+																		"id": "ade39d1b-af67-42ce-bf7e-822a0259c955",
+																		"name": "Info Icon.png0",
+																		"children": [],
+																		"parameters": {
+																			"materials": [
+																				"7e1ce92a-b61c-4078-bb14-660eb4b8f6b7"
+																			],
+																			"type": "plane",
+																			"layerMode": "test_3d",
+																			"scale": [
+																				0.68,
+																				1,
+																				1
+																			],
+																			"position": [
+																				0,
+																				0,
+																				0
+																			],
+																			"renderSorted": true
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "Info_Icon_png0"
+																	}
+																],
+																"parameters": {
+																	"rotation": [
+																		90,
+																		0,
+																		0
+																	],
+																	"scale": [
+																		0.1483815561702841,
+																		0.1483815561702841,
+																		0.1483815561702841
+																	],
+																	"position": [
+																		0,
+																		0,
+																		0.49593399999999915
+																	],
+																	"relativeTo": []
+																},
+																"scriptName": "Sun_InfoUI"
+															}
+														],
+														"parameters": {
+															"rotation": [
+																-90,
+																0,
+																0
+															],
+															"relativeTo": []
+														},
+														"scriptName": "_90_Sun"
+													}
+												],
+												"parameters": {
+													"axis": [
+														0,
+														1,
+														0
+													]
+												},
+												"scriptName": "billboard"
+											}
+										],
+										"parameters": {
+											"rotation": [
+												90,
+												0,
+												0
+											]
+										},
+										"scriptName": "billboardFix"
+									}
+								],
+								"parameters": {},
+								"scriptName": "Sun"
+							},
+							{
+								"id": "66b846d7-6d9c-4f36-8ba9-057482062a14",
+								"name": "Earth",
+								"nodeType": "Subsymbol",
+								"children": [
+									{
+										"id": "e0a1a9d5-76a6-4599-b637-939f33c1ded5",
+										"name": "BezierCircle0-BezierObject0",
+										"nodeType": "AttachmentPoint",
+										"children": [
+											{
+												"id": "4b9f043a-62b7-44bd-ae04-896d61364f07",
+												"name": "EarthRelativeToGroup",
+												"nodeType": "Group",
+												"children": [
+													{
+														"id": "3b2655ec-d9a9-4f6c-8251-c91bf9242fce",
+														"name": "Earth",
+														"nodeType": "Group",
+														"children": [
+															{
+																"id": "e203cad6-a31a-45e8-814d-c4b64f551be4",
+																"name": "Earth",
+																"nodeType": "Subsymbol",
+																"children": [],
+																"parameters": {
+																	"symbolDefinition": "Earth",
+																	"rotation": [
+																		90,
+																		0,
+																		0
+																	],
+																	"scale": [
+																		0.25,
+																		0.25,
+																		0.25
+																	],
+																	"animations": {
+																		"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+																		"t": 0
+																	},
+																	"visible": true,
+																	"position": [
+																		0,
+																		0,
+																		0
+																	]
+																},
+																"scriptName": "Earth1"
+															},
+															{
+																"id": "9ebcb158-a338-4ac2-a72c-a3d851463ffe",
+																"name": "hotspotBillboard1",
+																"nodeType": "Billboard",
+																"children": [
+																	{
+																		"id": "159658df-6f46-4b2d-afb4-1840b432b08d",
+																		"name": "earthHotspot",
+																		"children": [],
+																		"parameters": {
+																			"type": "plane",
+																			"layerMode": "overlay",
+																			"scale": [
+																				0.15722757853510538,
+																				0.15722757853510538,
+																				0.15722757853510538
+																			],
+																			"visible": false
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "earthHotspot",
+																		"actions": [
+																			{
+																				"eventName": "Tap",
+																				"rootStatement": {
+																					"id": "668f6f5a-b854-4194-8643-2b830ffee7f2",
+																					"type": "Block",
+																					"statements": [
+																						{
+																							"id": "3a9a8575-7f8f-4e3e-b8d9-5b9c4955a2ed",
+																							"type": "ActivateState",
+																							"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+																							"stateId": "54fa70a5-d541-4b3d-935e-8145ef6f5f96"
+																						}
+																					]
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"id": "7eef3c43-47e6-4548-a7bb-83668f880184",
+																		"name": "earthHotspotClose",
+																		"children": [],
+																		"parameters": {
+																			"type": "plane",
+																			"layerMode": "overlay",
+																			"scale": [
+																				0.15722757853510538,
+																				0.15722757853510538,
+																				0.15722757853510538
+																			],
+																			"visible": false
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "earthHotspotClose",
+																		"actions": [
+																			{
+																				"eventName": "Tap",
+																				"rootStatement": {
+																					"id": "de0e18cb-2427-45ca-8bca-24609bdfc5b0",
+																					"type": "Block",
+																					"statements": [
+																						{
+																							"id": "d5caf43a-9fcc-4554-a152-8b63e889b707",
+																							"type": "ActivateState",
+																							"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+																							"stateId": "7a683d1a-c264-4a42-9915-f61e43bba937"
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																],
+																"parameters": {},
+																"scriptName": "hotspotBillboard1"
+															},
+															{
+																"id": "6cbce07a-4c29-458e-905b-4e32e53f9a56",
+																"name": "billboardFix",
+																"nodeType": "Group",
+																"children": [
+																	{
+																		"id": "7971bff0-4e71-43c9-82d8-33de1ddfc6cb",
+																		"name": "billboard1",
+																		"nodeType": "Billboard",
+																		"children": [
+																			{
+																				"id": "fedc27a7-0f09-4e4e-8e92-23613a4e98b1",
+																				"name": "-90 Earth",
+																				"nodeType": "Group",
+																				"children": [
+																					{
+																						"id": "276d698c-7a69-4507-a787-0c64b7701055",
+																						"name": "Earth UI",
+																						"nodeType": "Group",
+																						"children": [
+																							{
+																								"id": "540b8bbe-4000-4daf-bed6-0803964e5f77",
+																								"name": "Earth Info Shadow.png0",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"04692adc-7403-40b0-8c53-5857c4b68f8f"
+																									],
+																									"type": "plane",
+																									"layerMode": "overlay",
+																									"scale": [
+																										2.01,
+																										1,
+																										1
+																									],
+																									"color": [
+																										1,
+																										1,
+																										1,
+																										0.25
+																									]
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Earth_InfoShadow_png0"
+																							},
+																							{
+																								"id": "802f01d2-004b-4893-88a3-cede848bc637",
+																								"name": "Earth Info.png0",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"eb6902ab-0019-4a93-8893-f18d95289841"
+																									],
+																									"type": "plane",
+																									"layerMode": "overlay",
+																									"scale": [
+																										2.01,
+																										1,
+																										1
+																									]
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Earth_Info_png0"
+																							}
+																						],
+																						"parameters": {
+																							"rotation": [
+																								45,
+																								0,
+																								0
+																							],
+																							"position": [
+																								0,
+																								-0.371573999999998,
+																								-0.15
+																							],
+																							"scale": [
+																								0.2,
+																								0.2,
+																								0.2
+																							]
+																						},
+																						"scriptName": "Earth_UI"
+																					},
+																					{
+																						"id": "89e203ac-70c2-4a6b-8572-039f02f0b4b8",
+																						"name": "Earth Info UI",
+																						"nodeType": "Group",
+																						"children": [
+																							{
+																								"id": "779bc99f-529c-4d14-8c0a-58361a4c1a80",
+																								"name": "Info Icon Shadow.png1",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"b42cdd05-7aa4-49fd-8aa5-5d0a0eb04d88"
+																									],
+																									"type": "plane",
+																									"layerMode": "test_3d",
+																									"scale": [
+																										0.68,
+																										1,
+																										1
+																									],
+																									"renderSorted": true,
+																									"color": [
+																										1,
+																										1,
+																										1,
+																										0.25
+																									]
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Info_IconShadow_png1"
+																							},
+																							{
+																								"id": "5d4f264b-dd20-4210-a08f-824f294b6686",
+																								"name": "Info Icon.png1",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"7e1ce92a-b61c-4078-bb14-660eb4b8f6b7"
+																									],
+																									"type": "plane",
+																									"layerMode": "test_3d",
+																									"scale": [
+																										0.68,
+																										1,
+																										1
+																									],
+																									"renderSorted": true
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Info_Icon_png1"
+																							}
+																						],
+																						"parameters": {
+																							"rotation": [
+																								90,
+																								0,
+																								0
+																							],
+																							"scale": [
+																								0.1483815561702841,
+																								0.1483815561702841,
+																								0.1483815561702841
+																							],
+																							"position": [
+																								0,
+																								0,
+																								0.3524300000000007
+																							],
+																							"relativeTo": []
+																						},
+																						"scriptName": "Earth_InfoUI"
+																					}
+																				],
+																				"parameters": {
+																					"rotation": [
+																						-90,
+																						0,
+																						0
+																					]
+																				},
+																				"scriptName": "_90_Earth"
+																			}
+																		],
+																		"parameters": {
+																			"axis": [
+																				0,
+																				1,
+																				0
+																			]
+																		},
+																		"scriptName": "billboard1"
+																	}
+																],
+																"parameters": {
+																	"rotation": [
+																		90,
+																		0,
+																		0
+																	]
+																},
+																"scriptName": "billboardFix0"
+															},
+															{
+																"id": "81482113-cbe8-4f8b-ae8e-dbd779400f56",
+																"name": "Moon",
+																"nodeType": "Group",
+																"children": [
+																	{
+																		"id": "098b3ed5-a55c-4ebb-991e-d87d6f14c842",
+																		"name": "BezierCircle0",
+																		"nodeType": "Subsymbol",
+																		"children": [
+																			{
+																				"id": "afe0c821-c10f-4dae-8c0b-308318fa059d",
+																				"name": "BezierCircle0-BezierObject2",
+																				"nodeType": "AttachmentPoint",
+																				"children": [
+																					{
+																						"id": "6f2b440b-8db8-401b-a756-08f7aa34705c",
+																						"name": "MoonRelativeToGroup",
+																						"nodeType": "Group",
+																						"children": [
+																							{
+																								"id": "8bca1928-865a-436e-801d-af2bff9ebae9",
+																								"name": "Moon",
+																								"nodeType": "Group",
+																								"children": [
+																									{
+																										"id": "51500f5b-624d-4da3-8654-292a276e766c",
+																										"name": "Moon0",
+																										"nodeType": "Subsymbol",
+																										"children": [],
+																										"parameters": {
+																											"symbolDefinition": "Moon",
+																											"scale": [
+																												0.1537003744898578,
+																												0.1537003744898578,
+																												0.1537003744898578
+																											]
+																										},
+																										"scriptName": "Moon00"
+																									}
+																								],
+																								"parameters": {},
+																								"scriptName": "Moon0"
+																							}
+																						],
+																						"parameters": {},
+																						"scriptName": "MoonRelativeToGroup"
+																					}
+																				],
+																				"parameters": {
+																					"bindTo": "BezierObject"
+																				},
+																				"scriptName": "BezierCircle0_BezierObject2"
+																			}
+																		],
+																		"parameters": {
+																			"symbolDefinition": "BezierCircle",
+																			"scale": [
+																				0.3744227631897241,
+																				0.3744227631897241,
+																				0.3744227631897241
+																			]
+																		},
+																		"scriptName": "BezierCircle0"
+																	}
+																],
+																"parameters": {
+																	"scale": [
+																		0.9469313017145905,
+																		0.9469313017145905,
+																		0.9469313017145905
+																	]
+																},
+																"scriptName": "Moon"
+															}
+														],
+														"parameters": {
+															"relativeTo": [
+																"4b9f043a-62b7-44bd-ae04-896d61364f07",
+																"9cb7774e-cc1b-4dc2-854f-d0dc82602c51"
+															]
+														},
+														"scriptName": "Earth0"
+													}
+												],
+												"parameters": {
+													"relativeToProp": [
+														1
+													],
+													"relativeTo": []
+												},
+												"scriptName": "EarthRelativeToGroup"
+											}
+										],
+										"parameters": {
+											"bindTo": "BezierObject"
+										},
+										"scriptName": "BezierCircle0_BezierObject0"
+									}
+								],
+								"parameters": {
+									"symbolDefinition": "BezierCircle",
+									"scale": [
+										0.6607880318139145,
+										0.6607880318139145,
+										0.6607880318139145
+									]
+								},
+								"scriptName": "Earth"
+							},
+							{
+								"id": "90129008-8807-447d-90f9-95f435b70c19",
+								"name": "Mars",
+								"nodeType": "Subsymbol",
+								"children": [
+									{
+										"id": "d4789f23-2ed3-4726-a472-4cd4fc43937b",
+										"name": "BezierCircle0-BezierObject1",
+										"nodeType": "AttachmentPoint",
+										"children": [
+											{
+												"id": "91ab4baf-03ca-490d-a916-b090ef95091a",
+												"name": "MarsRelativeToGroup",
+												"nodeType": "Group",
+												"children": [
+													{
+														"id": "3fb9f3fd-22f4-4017-b45e-34bba6896789",
+														"name": "Mars",
+														"nodeType": "Group",
+														"children": [
+															{
+																"id": "61883904-3144-4644-b79c-1ce7f5a4dff3",
+																"name": "Mars",
+																"nodeType": "Subsymbol",
+																"children": [],
+																"parameters": {
+																	"symbolDefinition": "Mars",
+																	"rotation": [
+																		90,
+																		0,
+																		0
+																	],
+																	"scale": [
+																		0.1,
+																		0.1,
+																		0.1
+																	],
+																	"animations": {
+																		"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+																		"t": 0
+																	}
+																},
+																"scriptName": "Mars0"
+															},
+															{
+																"id": "40bef972-62ab-48c1-b749-2526ade5682d",
+																"name": "hotspotBillboard",
+																"nodeType": "Billboard",
+																"children": [
+																	{
+																		"id": "5f1493a7-ead9-4bd9-ba47-7a768edc4711",
+																		"name": "marsHotspot",
+																		"children": [],
+																		"parameters": {
+																			"type": "plane",
+																			"layerMode": "overlay",
+																			"scale": [
+																				0.06697405803489846,
+																				0.06697405803489846,
+																				0.06697405803489846
+																			],
+																			"visible": false
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "marsHotspot",
+																		"actions": [
+																			{
+																				"eventName": "Tap",
+																				"rootStatement": {
+																					"id": "3630a6f6-11e7-4163-b2ab-d6e7965b5052",
+																					"type": "Block",
+																					"statements": [
+																						{
+																							"id": "645366f1-0037-47b7-b21e-7e33ebb45788",
+																							"type": "ActivateState",
+																							"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+																							"stateId": "1ef666b8-5399-4c75-b42c-4064389333cd"
+																						}
+																					]
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"id": "3bd33418-d231-4920-9e94-a8e50cca2c86",
+																		"name": "marsHotspotClose",
+																		"children": [],
+																		"parameters": {
+																			"type": "plane",
+																			"layerMode": "overlay",
+																			"scale": [
+																				0.06697405803489846,
+																				0.06697405803489846,
+																				0.06697405803489846
+																			],
+																			"visible": false
+																		},
+																		"nodeType": "Object",
+																		"scriptName": "marsHotspotClose",
+																		"actions": [
+																			{
+																				"eventName": "Tap",
+																				"rootStatement": {
+																					"id": "79f2ec4c-5b78-410e-a7a2-8af10ebde06b",
+																					"type": "Block",
+																					"statements": [
+																						{
+																							"id": "a7290a36-a1c4-4ec7-930e-6b4b6844c67b",
+																							"type": "ActivateState",
+																							"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+																							"stateId": "7a683d1a-c264-4a42-9915-f61e43bba937"
+																						}
+																					]
+																				}
+																			}
+																		]
+																	}
+																],
+																"parameters": {},
+																"scriptName": "hotspotBillboard0"
+															},
+															{
+																"id": "930b5fea-459f-4ea1-a1dd-382393d310df",
+																"name": "billboardFix",
+																"nodeType": "Group",
+																"children": [
+																	{
+																		"id": "ab066345-17a2-4f94-b4d2-42a37352838a",
+																		"name": "billboard",
+																		"nodeType": "Billboard",
+																		"children": [
+																			{
+																				"id": "1e94158a-7695-4104-a50f-854e8e5728f5",
+																				"name": "-90 Mars",
+																				"nodeType": "Group",
+																				"children": [
+																					{
+																						"id": "e39b5413-f1bc-4e8c-afbe-3e492398b5ce",
+																						"name": "Mars UI",
+																						"nodeType": "Group",
+																						"children": [
+																							{
+																								"id": "9fd17af5-f436-4f9e-bc46-e791f653f719",
+																								"name": "Mars Info Shadow.png0",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"9a01847a-0476-4453-b6f1-d2b501631dd3"
+																									],
+																									"type": "plane",
+																									"layerMode": "overlay",
+																									"scale": [
+																										2.01,
+																										1,
+																										1
+																									],
+																									"color": [
+																										1,
+																										1,
+																										1,
+																										0.25
+																									]
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Mars_InfoShadow_png0"
+																							},
+																							{
+																								"id": "a08c6ee3-f976-4064-b9de-076e524b3b75",
+																								"name": "Mars Info.png0",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"27d36fd6-7b38-423f-a340-00d6101fd6a8"
+																									],
+																									"type": "plane",
+																									"layerMode": "overlay",
+																									"scale": [
+																										2.01,
+																										1,
+																										1
+																									]
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Mars_Info_png0"
+																							}
+																						],
+																						"parameters": {
+																							"rotation": [
+																								45,
+																								0,
+																								0
+																							],
+																							"position": [
+																								0,
+																								-0.17745599999999964,
+																								-0.08635399999999936
+																							],
+																							"scale": [
+																								0.12,
+																								0.12,
+																								0.12
+																							]
+																						},
+																						"scriptName": "Mars_UI"
+																					},
+																					{
+																						"id": "9fd1229f-3952-446e-a2fc-3290b9c9a02d",
+																						"name": "Mars Info UI",
+																						"nodeType": "Group",
+																						"children": [
+																							{
+																								"id": "8630c6c6-74a1-449b-a992-c040b6cc10ec",
+																								"name": "Info Icon Shadow.png2",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"b42cdd05-7aa4-49fd-8aa5-5d0a0eb04d88"
+																									],
+																									"type": "plane",
+																									"layerMode": "test_3d",
+																									"scale": [
+																										0.68,
+																										1,
+																										1
+																									],
+																									"renderSorted": true,
+																									"color": [
+																										1,
+																										1,
+																										1,
+																										0.25
+																									]
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Info_IconShadow_png2"
+																							},
+																							{
+																								"id": "d0ee2cd4-2902-4502-9ae3-93c507c55294",
+																								"name": "Info Icon.png2",
+																								"children": [],
+																								"parameters": {
+																									"materials": [
+																										"7e1ce92a-b61c-4078-bb14-660eb4b8f6b7"
+																									],
+																									"type": "plane",
+																									"layerMode": "test_3d",
+																									"scale": [
+																										0.68,
+																										1,
+																										1
+																									],
+																									"renderSorted": true
+																								},
+																								"nodeType": "Object",
+																								"scriptName": "Info_Icon_png2"
+																							}
+																						],
+																						"parameters": {
+																							"rotation": [
+																								90,
+																								0,
+																								0
+																							],
+																							"scale": [
+																								0.07699917935611436,
+																								0.07699917935611436,
+																								0.07699917935611436
+																							],
+																							"position": [
+																								0,
+																								0,
+																								0.15431000000000109
+																							],
+																							"relativeTo": []
+																						},
+																						"scriptName": "Mars_InfoUI"
+																					}
+																				],
+																				"parameters": {
+																					"rotation": [
+																						-90,
+																						0,
+																						0
+																					]
+																				},
+																				"scriptName": "_90_Mars"
+																			}
+																		],
+																		"parameters": {
+																			"axis": [
+																				0,
+																				1,
+																				0
+																			]
+																		},
+																		"scriptName": "billboard0"
+																	}
+																],
+																"parameters": {
+																	"rotation": [
+																		90,
+																		0,
+																		0
+																	]
+																},
+																"scriptName": "billboardFix1"
+															}
+														],
+														"parameters": {
+															"relativeToProp": [
+																1,
+																0
+															],
+															"relativeTo": [
+																"91ab4baf-03ca-490d-a916-b090ef95091a",
+																"9cb7774e-cc1b-4dc2-854f-d0dc82602c51"
+															]
+														},
+														"scriptName": "Mars"
+													}
+												],
+												"parameters": {
+													"position": [
+														0,
+														0,
+														0
+													]
+												},
+												"scriptName": "MarsRelativeToGroup"
+											}
+										],
+										"parameters": {
+											"bindTo": "BezierObject"
+										},
+										"scriptName": "BezierCircle0_BezierObject1"
+									}
+								],
+								"parameters": {
+									"symbolDefinition": "BezierCircle",
+									"scale": [
+										1.1019980725577936,
+										1.1019980725577936,
+										1.1019980725577936
+									],
+									"visible": true
+								},
+								"scriptName": "Mars"
+							}
+						],
+						"parameters": {
+							"position": [
+								0,
+								0,
+								0.44593500000000047
+							],
+							"relativeTo": [],
+							"relativeToProp": [
+								1
+							]
+						},
+						"scriptName": "Solar_System"
+					},
+					{
+						"id": "67a30573-b642-4d6e-8d3d-968a0aa12c81",
+						"name": "lookFor",
+						"nodeType": "Subsymbol",
+						"children": [],
+						"parameters": {
+							"symbolDefinition": "lookFor",
+							"target_image": [
+								"d4c47d8e-7787-48b0-9d85-8c430283079e"
+							]
+						},
+						"scriptName": "lookFor"
+					}
+				],
+				"parameters": {
+					"type": "<none>",
+					"source": "50e1f44f-ab26-40a7-8faa-8311d448d8e6"
+				},
+				"scriptName": "target",
+				"actions": [
+					{
+						"eventName": "Seen",
+						"rootStatement": {
+							"id": "02778309-ac04-4237-bae4-db40f52a1bfc",
+							"type": "Block",
+							"statements": [
+								{
+									"id": "9f852381-eae4-460e-8766-8139f7991d19",
+									"type": "ActivateState",
+									"controllerId": "c626dfae-9b59-4f75-901d-f1e30a42466a",
+									"stateId": "c35767f5-acee-48f4-b16c-d96953bde9d0"
+								},
+								{
+									"id": "047f265c-6da3-4c0e-85b2-49b23f3fd70f",
+									"type": "ActivateState",
+									"controllerId": "3b75f36c-81d9-4757-b2f5-c5745d0e1e42",
+									"stateId": "de0ec9c1-6566-44f6-90dc-056530ef2461"
+								}
+							]
+						}
+					},
+					{
+						"eventName": "NotSeen",
+						"rootStatement": {
+							"id": "d06bf33e-7d5e-4976-b91e-2459e627a784",
+							"type": "Block",
+							"statements": [
+								{
+									"id": "53e5b325-8bc1-4361-acd5-0167553fd56f",
+									"type": "ActivateState",
+									"controllerId": "c626dfae-9b59-4f75-901d-f1e30a42466a",
+									"stateId": "d8ad7b59-9f52-429e-a5ed-bdf691d114c7"
+								},
+								{
+									"id": "27715dca-3377-4e4c-9bfc-fe04a222e0f5",
+									"type": "ActivateState",
+									"controllerId": "3b75f36c-81d9-4757-b2f5-c5745d0e1e42",
+									"stateId": "db179ada-a49d-48d1-8299-ce26487d71b3"
+								},
+								{
+									"id": "94cb3111-320e-442a-9a32-38fbfb16dbaf",
+									"type": "PlayTimeline",
+									"controllerId": "b9376c60-b927-4754-9c05-932c77780927",
+									"fromStart": true,
+									"timelineId": "4cd9f482-6d37-4c3b-a8ab-0481f8be3bc1"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "b17634f5-d615-4a45-b886-af0bf53d48a2",
+				"name": "Back Button Parent Group",
+				"nodeType": "Group",
+				"children": [
+					{
+						"id": "817168e5-fb70-4640-b852-3201635906e6",
+						"name": "Back Button Group",
+						"nodeType": "Group",
+						"children": [
+							{
+								"id": "a1dbcee5-55d0-4014-8be8-e8594615ac04",
+								"name": "Back Button Shadow",
+								"children": [],
+								"parameters": {
+									"materials": [
+										"656e3dd4-d53e-4640-bc2b-df91269c9c92"
+									],
+									"type": "plane",
+									"layerMode": "overlay",
+									"scale": [
+										0.89,
+										1,
+										1
+									],
+									"color": [
+										1,
+										1,
+										1,
+										0.25
+									]
+								},
+								"nodeType": "Object",
+								"scriptName": "Back_ButtonShadow"
+							},
+							{
+								"id": "3fe2a3f8-e507-47c5-ab7f-f47445af24b9",
+								"name": "Back Button",
+								"children": [],
+								"parameters": {
+									"type": "plane",
+									"layerMode": "overlay",
+									"scale": [
+										0.89,
+										1,
+										1
+									],
+									"visible": true,
+									"materials": [
+										"aec2bd20-c464-4071-ac3d-94601f5fb56d"
+									]
+								},
+								"nodeType": "Object",
+								"scriptName": "Back_Button",
+								"actions": [
+									{
+										"eventName": "Tap",
+										"rootStatement": {
+											"id": "2436ce07-824c-4c6d-87b6-7c775a9dd5b1",
+											"type": "Block",
+											"statements": [
+												{
+													"id": "f84ee519-825f-4003-9800-b8b95e5e36ce",
+													"type": "ActivateState",
+													"controllerId": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+													"stateId": "7a683d1a-c264-4a42-9915-f61e43bba937"
+												}
+											]
+										}
+									}
+								]
+							}
+						],
+						"parameters": {
+							"scale": [
+								0.21374078082570952,
+								0.21374078082570952,
+								0.21374078082570952
+							],
+							"relativeTo": [
+								"Z.screenLeft"
+							],
+							"rotation": [
+								0,
+								0,
+								90
+							],
+							"position": [
+								0.2,
+								-0.8,
+								0
+							]
+						},
+						"scriptName": "Back_ButtonGroup"
+					}
+				],
+				"parameters": {},
+				"actions": [],
+				"scriptName": "Back_ButtonParentGroup"
+			},
+			{
+				"id": "12",
+				"name": "show",
+				"nodeType": "Script",
+				"children": [],
+				"parameters": {
+					"code": "const display_shown = symbol.controllers.display.elements.shown;\nconst display_hidden = symbol.controllers.display.elements.hidden;\n\nparent.on(\"show\", () => {\n    \n    // Make sure we start from fully hidden\n    display_hidden.reset();\n    \n    // Move to the shown state\n    display_shown.activate();\n    \n});\n\n\n"
+				},
+				"scriptName": "show0"
+			},
+			{
+				"id": "13",
+				"name": "hide",
+				"nodeType": "Script",
+				"children": [],
+				"parameters": {
+					"code": "const display_hidden = symbol.controllers.display.elements.hidden;\n\n\nparent.on(\"hide\", () => {\n\t\n\t// Once we're fully hidden we should emit the \"hidden\" signal\n\tdisplay_hidden.one(\"complete\", () => {\n\t    symbol.emit(\"hidden\");\n\t});\n\t\n\tdisplay_hidden.activate();\n});"
+				},
+				"scriptName": "hide"
+			},
+			{
+				"id": "4",
+				"name": "accelerometer",
+				"nodeType": "Accelerometer",
+				"children": [],
+				"parameters": {
+					"landscapeState": "10",
+					"portraitState": "11"
+				},
+				"scriptName": "accelerometer"
+			}
+		],
+		"parameters": {
+			"relativeTo": [
+				"Z.screen"
+			]
+		},
+		"scriptName": "root",
+		"actions": [
+			{
+				"eventName": "Show",
+				"rootStatement": {
+					"id": "b1c47fcd-79ba-49ef-a463-9cd3783aad19",
+					"type": "Block",
+					"statements": [
+						{
+							"id": "d7403b53-b903-4fdc-9404-e443d116594b",
+							"type": "PlayTimeline",
+							"controllerId": "88c14fd2-f4a4-4057-b6c4-7966b1eadaaa",
+							"timelineId": "2ac1570a-f3d9-4f32-abc7-338a5d823938"
+						},
+						{
+							"id": "b96b5f09-72fe-447c-b8c5-48ed50083bd3",
+							"type": "PlayTimeline",
+							"controllerId": "be5b5439-efd4-4f74-87fb-ead0e1794051",
+							"timelineId": "69a058fb-13bb-4110-8704-0323b328f7d0"
+						},
+						{
+							"id": "32e6a671-c70d-4243-8f0f-03c76004c7e4",
+							"type": "PlayTimeline",
+							"controllerId": "6e0c2a22-684d-4aaf-8683-146ba8cbec37",
+							"timelineId": "5436387b-9f8c-4dcc-a740-b5febd0623b6"
+						},
+						{
+							"id": "9c79fc52-e925-4aa5-9d14-4e986ab04106",
+							"type": "PlayTimeline",
+							"controllerId": "90425eb8-9da2-488a-9671-728165a447a3",
+							"timelineId": "03919cbb-94b5-48d6-adc2-5aa1ba95ed48"
+						}
+					]
+				}
+			}
+		]
+	},
+	"controllers": [
+		{
+			"id": "mig-2",
+			"name": "display",
+			"default": "8",
+			"elements": [
+				{
+					"id": "8",
+					"name": "shown",
+					"overrides": {
+						"0": {
+							"enabled": {
+								"v": true,
+								"r": 1,
+								"p": 1
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "shown"
+				},
+				{
+					"id": "9",
+					"name": "hidden",
+					"overrides": {
+						"0": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "hidden"
+				}
+			],
+			"scriptName": "display"
+		},
+		{
+			"id": "mig-5",
+			"name": "orientation",
+			"default": "10",
+			"elements": [
+				{
+					"id": "10",
+					"name": "landscape",
+					"overrides": {},
+					"type": "state",
+					"scriptName": "landscape"
+				},
+				{
+					"id": "11",
+					"name": "portrait",
+					"overrides": {},
+					"type": "state",
+					"scriptName": "portrait"
+				}
+			],
+			"scriptName": "orientation"
+		},
+		{
+			"id": "c626dfae-9b59-4f75-901d-f1e30a42466a",
+			"name": "solar system",
+			"elements": [
+				{
+					"id": "c35767f5-acee-48f4-b16c-d96953bde9d0",
+					"name": "seen",
+					"overrides": {
+						"9cb7774e-cc1b-4dc2-854f-d0dc82602c51": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"b17634f5-d615-4a45-b886-af0bf53d48a2": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"enabled": {
+								"v": true,
+								"r": 1,
+								"p": 0
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "seen"
+				},
+				{
+					"id": "d8ad7b59-9f52-429e-a5ed-bdf691d114c7",
+					"name": "notseen",
+					"overrides": {
+						"9cb7774e-cc1b-4dc2-854f-d0dc82602c51": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"b17634f5-d615-4a45-b886-af0bf53d48a2": {
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "notseen"
+				}
+			],
+			"default": "c35767f5-acee-48f4-b16c-d96953bde9d0",
+			"scriptName": "solar_system"
+		},
+		{
+			"id": "88c14fd2-f4a4-4057-b6c4-7966b1eadaaa",
+			"name": "sun",
+			"elements": [
+				{
+					"id": "2ac1570a-f3d9-4f32-abc7-338a5d823938",
+					"name": "rotate",
+					"overrides": {
+						"cf00addb-f456-4260-b910-76b989e65ec2": {
+							"rotation": [
+								{
+									"t": -1,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "linear"
+								},
+								{
+									"t": 29999,
+									"v": [
+										90,
+										360,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 30001,
+									"v": [
+										90,
+										360,
+										0
+									]
+								}
+							],
+							"animations": [
+								{
+									"t": -1,
+									"v": {
+										"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+										"t": 41624
+									},
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": {
+										"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+										"t": 41624
+									},
+									"i": "linear"
+								},
+								{
+									"t": 29999,
+									"v": {
+										"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 30001,
+									"v": {
+										"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+										"t": 0
+									}
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "3a62ccb5-2587-4dab-91b6-742065be4698",
+					"toState": "eeba6886-23af-49cb-8ecd-6526848bc960",
+					"length": 30000,
+					"scriptName": "rotate",
+					"loop": true
+				},
+				{
+					"id": "3a62ccb5-2587-4dab-91b6-742065be4698",
+					"name": "",
+					"overrides": {
+						"cf00addb-f456-4260-b910-76b989e65ec2": {
+							"rotation": {
+								"v": [
+									90,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+									"t": 41624
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "eeba6886-23af-49cb-8ecd-6526848bc960",
+					"name": "",
+					"overrides": {
+						"cf00addb-f456-4260-b910-76b989e65ec2": {
+							"rotation": {
+								"v": [
+									90,
+									360,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "2ac1570a-f3d9-4f32-abc7-338a5d823938",
+			"scriptName": "sun"
+		},
+		{
+			"id": "be5b5439-efd4-4f74-87fb-ead0e1794051",
+			"name": "earth",
+			"elements": [
+				{
+					"id": "69a058fb-13bb-4110-8704-0323b328f7d0",
+					"name": "rotate and orbit",
+					"overrides": {
+						"e203cad6-a31a-45e8-814d-c4b64f551be4": {
+							"rotation": [
+								{
+									"t": -1,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "linear"
+								},
+								{
+									"t": 9999,
+									"v": [
+										90,
+										360,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 10001,
+									"v": [
+										90,
+										360,
+										0
+									]
+								}
+							],
+							"animations": [
+								{
+									"t": -1,
+									"v": {
+										"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": {
+										"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+										"t": 0
+									},
+									"i": "linear"
+								},
+								{
+									"t": 9999,
+									"v": {
+										"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+										"t": 41624
+									},
+									"i": "tie"
+								},
+								{
+									"t": 10001,
+									"v": {
+										"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+										"t": 41624
+									}
+								}
+							]
+						},
+						"66b846d7-6d9c-4f36-8ba9-057482062a14": {
+							"BezierCircleDistance": [
+								{
+									"t": -1,
+									"v": 1,
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": 1,
+									"i": "linear"
+								},
+								{
+									"t": 9999,
+									"v": 0,
+									"i": "tie"
+								},
+								{
+									"t": 10001,
+									"v": 0
+								}
+							]
+						},
+						"098b3ed5-a55c-4ebb-991e-d87d6f14c842": {
+							"BezierCircleDistance": [
+								{
+									"t": -1,
+									"v": 1,
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": 1,
+									"i": "linear"
+								},
+								{
+									"t": 9999,
+									"v": 0,
+									"i": "tie"
+								},
+								{
+									"t": 10001,
+									"v": 0
+								}
+							]
+						},
+						"51500f5b-624d-4da3-8654-292a276e766c": {
+							"rotation": [
+								{
+									"t": -1,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "linear"
+								},
+								{
+									"t": 9999,
+									"v": [
+										90,
+										360,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 10001,
+									"v": [
+										90,
+										360,
+										0
+									]
+								}
+							],
+							"animations": [
+								{
+									"t": -1,
+									"v": {
+										"element": "4112b737-f9bb-40d6-993c-c71dabefc2ba",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": {
+										"element": "4112b737-f9bb-40d6-993c-c71dabefc2ba",
+										"t": 20791
+									},
+									"i": "linear"
+								},
+								{
+									"t": 9999,
+									"v": {
+										"element": "4112b737-f9bb-40d6-993c-c71dabefc2ba",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 10001,
+									"v": {
+										"element": "4112b737-f9bb-40d6-993c-c71dabefc2ba",
+										"t": 0
+									}
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "8c7f054d-1e5d-4061-b8e5-3ecd27558f75",
+					"toState": "f11585d2-96ce-49a8-a692-cf6dfd5669e2",
+					"length": 10000,
+					"scriptName": "rotate_andorbit",
+					"loop": true
+				},
+				{
+					"id": "8c7f054d-1e5d-4061-b8e5-3ecd27558f75",
+					"name": "",
+					"overrides": {
+						"e203cad6-a31a-45e8-814d-c4b64f551be4": {
+							"rotation": {
+								"v": [
+									90,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						},
+						"66b846d7-6d9c-4f36-8ba9-057482062a14": {
+							"BezierCircleDistance": {
+								"v": 1,
+								"r": 0.15
+							}
+						},
+						"098b3ed5-a55c-4ebb-991e-d87d6f14c842": {
+							"BezierCircleDistance": {
+								"v": 1,
+								"r": 0.15
+							}
+						},
+						"51500f5b-624d-4da3-8654-292a276e766c": {
+							"rotation": {
+								"v": [
+									90,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "4112b737-f9bb-40d6-993c-c71dabefc2ba",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "f11585d2-96ce-49a8-a692-cf6dfd5669e2",
+					"name": "",
+					"overrides": {
+						"e203cad6-a31a-45e8-814d-c4b64f551be4": {
+							"rotation": {
+								"v": [
+									90,
+									360,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "744c5adc-cb8b-4ac7-83df-a885e4f00ff0",
+									"t": 41624
+								},
+								"r": 0.15
+							}
+						},
+						"66b846d7-6d9c-4f36-8ba9-057482062a14": {
+							"BezierCircleDistance": {
+								"v": 0,
+								"r": 0.15
+							}
+						},
+						"098b3ed5-a55c-4ebb-991e-d87d6f14c842": {
+							"BezierCircleDistance": {
+								"v": 0,
+								"r": 0.15
+							}
+						},
+						"51500f5b-624d-4da3-8654-292a276e766c": {
+							"rotation": {
+								"v": [
+									90,
+									360,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "4112b737-f9bb-40d6-993c-c71dabefc2ba",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "69a058fb-13bb-4110-8704-0323b328f7d0",
+			"scriptName": "earth"
+		},
+		{
+			"id": "6e0c2a22-684d-4aaf-8683-146ba8cbec37",
+			"name": "mars",
+			"elements": [
+				{
+					"id": "5436387b-9f8c-4dcc-a740-b5febd0623b6",
+					"name": "rotate and orbit",
+					"overrides": {
+						"90129008-8807-447d-90f9-95f435b70c19": {
+							"BezierCircleDistance": [
+								{
+									"t": -1,
+									"v": 1,
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": 1,
+									"i": "linear"
+								},
+								{
+									"t": 15000,
+									"v": 0,
+									"i": "tie"
+								},
+								{
+									"t": 15001,
+									"v": 0
+								}
+							]
+						},
+						"61883904-3144-4644-b79c-1ce7f5a4dff3": {
+							"rotation": [
+								{
+									"t": -1,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										90,
+										0,
+										0
+									],
+									"i": "linear"
+								},
+								{
+									"t": 15000,
+									"v": [
+										90,
+										360,
+										0
+									],
+									"i": "tie"
+								},
+								{
+									"t": 15001,
+									"v": [
+										90,
+										360,
+										0
+									]
+								}
+							],
+							"animations": [
+								{
+									"t": -1,
+									"v": {
+										"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+										"t": 41624
+									},
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": {
+										"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+										"t": 41624
+									},
+									"i": "linear"
+								},
+								{
+									"t": 14999,
+									"v": {
+										"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 15001,
+									"v": {
+										"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+										"t": 0
+									}
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "752a745f-57a8-4436-83b1-992431fc1199",
+					"toState": "c62666f8-69a8-426a-a370-0a4a26872bb1",
+					"length": 15000,
+					"scriptName": "rotate_andorbit",
+					"loop": true
+				},
+				{
+					"id": "752a745f-57a8-4436-83b1-992431fc1199",
+					"name": "",
+					"overrides": {
+						"90129008-8807-447d-90f9-95f435b70c19": {
+							"BezierCircleDistance": {
+								"v": 1,
+								"r": 0.15
+							}
+						},
+						"61883904-3144-4644-b79c-1ce7f5a4dff3": {
+							"rotation": {
+								"v": [
+									90,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+									"t": 41624
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "c62666f8-69a8-426a-a370-0a4a26872bb1",
+					"name": "",
+					"overrides": {
+						"90129008-8807-447d-90f9-95f435b70c19": {
+							"BezierCircleDistance": {
+								"v": 0,
+								"r": 0.15
+							}
+						},
+						"61883904-3144-4644-b79c-1ce7f5a4dff3": {
+							"rotation": {
+								"v": [
+									90,
+									360,
+									0
+								],
+								"r": 0.15
+							},
+							"animations": {
+								"v": {
+									"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "5436387b-9f8c-4dcc-a740-b5febd0623b6",
+			"scriptName": "mars"
+		},
+		{
+			"id": "c3682ef9-d1e5-4569-a07a-d9fb51b588dd",
+			"name": "closeups",
+			"elements": [
+				{
+					"id": "7a683d1a-c264-4a42-9915-f61e43bba937",
+					"name": "orbit",
+					"overrides": {
+						"cf00addb-f456-4260-b910-76b989e65ec2": {},
+						"90129008-8807-447d-90f9-95f435b70c19": {},
+						"66b846d7-6d9c-4f36-8ba9-057482062a14": {},
+						"69ed4d02-dcfc-445c-9ca9-136316ad1c4b": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"91ab4baf-03ca-490d-a916-b090ef95091a": {},
+						"4b9f043a-62b7-44bd-ae04-896d61364f07": {},
+						"3b2655ec-d9a9-4f6c-8251-c91bf9242fce": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									1,
+									0
+								],
+								"r": 0.15
+							}
+						},
+						"3fb9f3fd-22f4-4017-b45e-34bba6896789": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									1,
+									0
+								],
+								"r": 0.15
+							}
+						},
+						"224ee1c6-35fc-407d-ba5e-d5689ae50463": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"276d698c-7a69-4507-a787-0c64b7701055": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"e39b5413-f1bc-4e8c-afbe-3e492398b5ce": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1,
+								"p": 0
+							}
+						},
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1,
+								"p": 0
+							}
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1,
+								"p": 0
+							}
+						},
+						"ade39d1b-af67-42ce-bf7e-822a0259c955": {},
+						"5d4f264b-dd20-4210-a08f-824f294b6686": {},
+						"d0ee2cd4-2902-4502-9ae3-93c507c55294": {},
+						"3fe2a3f8-e507-47c5-ab7f-f47445af24b9": {},
+						"817168e5-fb70-4640-b852-3201635906e6": {
+							"visible": {
+								"v": false,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"enabled": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"7fcc9f56-8135-432d-bafe-b39697ecc431": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"654ad9c3-76d7-4629-9e3a-5c52a5da1b59": {
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"7eef3c43-47e6-4548-a7bb-83668f880184": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"159658df-6f46-4b2d-afb4-1840b432b08d": {
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"5f1493a7-ead9-4bd9-ba47-7a768edc4711": {
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"3bd33418-d231-4920-9e94-a8e50cca2c86": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "orbit"
+				},
+				{
+					"id": "491cb057-29d7-47e9-bd3f-e6820b55b4af",
+					"name": "sunCloseup",
+					"overrides": {
+						"cf00addb-f456-4260-b910-76b989e65ec2": {},
+						"90129008-8807-447d-90f9-95f435b70c19": {},
+						"66b846d7-6d9c-4f36-8ba9-057482062a14": {},
+						"69ed4d02-dcfc-445c-9ca9-136316ad1c4b": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.3
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									2,
+									2,
+									2
+								],
+								"r": 0.15
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"91ab4baf-03ca-490d-a916-b090ef95091a": {},
+						"4b9f043a-62b7-44bd-ae04-896d61364f07": {},
+						"3b2655ec-d9a9-4f6c-8251-c91bf9242fce": {
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									1
+								],
+								"r": 0.15
+							}
+						},
+						"3fb9f3fd-22f4-4017-b45e-34bba6896789": {
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									1,
+									0
+								],
+								"r": 0.15
+							}
+						},
+						"224ee1c6-35fc-407d-ba5e-d5689ae50463": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.05
+							},
+							"visible": {
+								"v": true,
+								"r": 1,
+								"p": 0
+							}
+						},
+						"276d698c-7a69-4507-a787-0c64b7701055": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"e39b5413-f1bc-4e8c-afbe-3e492398b5ce": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"ade39d1b-af67-42ce-bf7e-822a0259c955": {},
+						"5d4f264b-dd20-4210-a08f-824f294b6686": {},
+						"d0ee2cd4-2902-4502-9ae3-93c507c55294": {},
+						"3fe2a3f8-e507-47c5-ab7f-f47445af24b9": {},
+						"817168e5-fb70-4640-b852-3201635906e6": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"7fcc9f56-8135-432d-bafe-b39697ecc431": {
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"654ad9c3-76d7-4629-9e3a-5c52a5da1b59": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"7eef3c43-47e6-4548-a7bb-83668f880184": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"159658df-6f46-4b2d-afb4-1840b432b08d": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"5f1493a7-ead9-4bd9-ba47-7a768edc4711": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"3bd33418-d231-4920-9e94-a8e50cca2c86": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "sunCloseup"
+				},
+				{
+					"id": "54fa70a5-d541-4b3d-935e-8145ef6f5f96",
+					"name": "earthCloseup",
+					"overrides": {
+						"90129008-8807-447d-90f9-95f435b70c19": {},
+						"66b846d7-6d9c-4f36-8ba9-057482062a14": {},
+						"69ed4d02-dcfc-445c-9ca9-136316ad1c4b": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 0
+							}
+						},
+						"91ab4baf-03ca-490d-a916-b090ef95091a": {},
+						"4b9f043a-62b7-44bd-ae04-896d61364f07": {},
+						"3b2655ec-d9a9-4f6c-8251-c91bf9242fce": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0.3
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									2.5,
+									2.5,
+									2.5
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									0,
+									1
+								],
+								"r": 0.15
+							}
+						},
+						"3fb9f3fd-22f4-4017-b45e-34bba6896789": {
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									1,
+									0
+								],
+								"r": 0.15
+							}
+						},
+						"224ee1c6-35fc-407d-ba5e-d5689ae50463": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"276d698c-7a69-4507-a787-0c64b7701055": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.05
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"e39b5413-f1bc-4e8c-afbe-3e492398b5ce": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"ade39d1b-af67-42ce-bf7e-822a0259c955": {},
+						"5d4f264b-dd20-4210-a08f-824f294b6686": {},
+						"d0ee2cd4-2902-4502-9ae3-93c507c55294": {},
+						"3fe2a3f8-e507-47c5-ab7f-f47445af24b9": {},
+						"817168e5-fb70-4640-b852-3201635906e6": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"7fcc9f56-8135-432d-bafe-b39697ecc431": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"654ad9c3-76d7-4629-9e3a-5c52a5da1b59": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"7eef3c43-47e6-4548-a7bb-83668f880184": {
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"159658df-6f46-4b2d-afb4-1840b432b08d": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"5f1493a7-ead9-4bd9-ba47-7a768edc4711": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"3bd33418-d231-4920-9e94-a8e50cca2c86": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "earthCloseup"
+				},
+				{
+					"id": "1ef666b8-5399-4c75-b42c-4064389333cd",
+					"name": "marsCloseup",
+					"overrides": {
+						"69ed4d02-dcfc-445c-9ca9-136316ad1c4b": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 0
+							}
+						},
+						"3b2655ec-d9a9-4f6c-8251-c91bf9242fce": {
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									1
+								],
+								"r": 0.15
+							}
+						},
+						"3fb9f3fd-22f4-4017-b45e-34bba6896789": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"position": {
+								"v": [
+									0,
+									0,
+									0.3
+								],
+								"r": 0.15
+							},
+							"scale": {
+								"v": [
+									4,
+									4,
+									4
+								],
+								"r": 0.15
+							},
+							"relativeToProp": {
+								"v": [
+									0,
+									1
+								],
+								"r": 0.15
+							}
+						},
+						"224ee1c6-35fc-407d-ba5e-d5689ae50463": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"276d698c-7a69-4507-a787-0c64b7701055": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"e39b5413-f1bc-4e8c-afbe-3e492398b5ce": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.05
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									0
+								],
+								"r": 0.15
+							},
+							"visible": {
+								"v": false,
+								"r": 1,
+								"p": 1
+							}
+						},
+						"ade39d1b-af67-42ce-bf7e-822a0259c955": {},
+						"5d4f264b-dd20-4210-a08f-824f294b6686": {},
+						"d0ee2cd4-2902-4502-9ae3-93c507c55294": {},
+						"3fe2a3f8-e507-47c5-ab7f-f47445af24b9": {},
+						"817168e5-fb70-4640-b852-3201635906e6": {
+							"visible": {
+								"v": true,
+								"r": 1
+							},
+							"color": {
+								"v": [
+									1,
+									1,
+									1,
+									1
+								],
+								"r": 0.15
+							},
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						},
+						"7fcc9f56-8135-432d-bafe-b39697ecc431": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"654ad9c3-76d7-4629-9e3a-5c52a5da1b59": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"7eef3c43-47e6-4548-a7bb-83668f880184": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"159658df-6f46-4b2d-afb4-1840b432b08d": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"5f1493a7-ead9-4bd9-ba47-7a768edc4711": {
+							"enabled": {
+								"v": false,
+								"r": 1
+							}
+						},
+						"3bd33418-d231-4920-9e94-a8e50cca2c86": {
+							"enabled": {
+								"v": true,
+								"r": 1
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "marsCloseup"
+				}
+			],
+			"default": "7a683d1a-c264-4a42-9915-f61e43bba937",
+			"scriptName": "closeups"
+		},
+		{
+			"id": "90425eb8-9da2-488a-9671-728165a447a3",
+			"name": "info UI",
+			"elements": [
+				{
+					"id": "03919cbb-94b5-48d6-adc2-5aa1ba95ed48",
+					"name": "bounce",
+					"overrides": {
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"position": [
+								{
+									"t": -1,
+									"v": [
+										0,
+										0,
+										0.3524300000000007
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										0,
+										0,
+										0.3524300000000007
+									],
+									"i": "linear"
+								},
+								{
+									"t": 1000,
+									"v": [
+										0,
+										0,
+										0.4524300000000007
+									],
+									"i": "linear"
+								},
+								{
+									"t": 1999,
+									"v": [
+										0,
+										0,
+										0.3524300000000007
+									],
+									"i": "tie"
+								},
+								{
+									"t": 2001,
+									"v": [
+										0,
+										0,
+										0.3524300000000007
+									]
+								}
+							]
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"position": [
+								{
+									"t": -1,
+									"v": [
+										0,
+										0,
+										0.15431000000000109
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										0,
+										0,
+										0.15431000000000109
+									],
+									"i": "linear"
+								},
+								{
+									"t": 1000,
+									"v": [
+										0,
+										0,
+										0.2543100000000011
+									],
+									"i": "linear"
+								},
+								{
+									"t": 1999,
+									"v": [
+										0,
+										0,
+										0.15431000000000109
+									],
+									"i": "tie"
+								},
+								{
+									"t": 2001,
+									"v": [
+										0,
+										0,
+										0.15431000000000109
+									]
+								}
+							]
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"position": [
+								{
+									"t": -1,
+									"v": [
+										0,
+										0,
+										0.49593399999999915
+									],
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": [
+										0,
+										0,
+										0.49593399999999915
+									],
+									"i": "linear"
+								},
+								{
+									"t": 1000,
+									"v": [
+										0,
+										0,
+										0.5959339999999992
+									],
+									"i": "linear"
+								},
+								{
+									"t": 1999,
+									"v": [
+										0,
+										0,
+										0.49593399999999915
+									],
+									"i": "tie"
+								},
+								{
+									"t": 2001,
+									"v": [
+										0,
+										0,
+										0.49593399999999915
+									]
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "c34ba024-cd33-44e7-8323-b9106f4a3f8c",
+					"toState": "d9e3c9c2-6498-4fdd-bbe1-7659352b5f0b",
+					"length": 2000,
+					"scriptName": "bounce",
+					"loop": true
+				},
+				{
+					"id": "c34ba024-cd33-44e7-8323-b9106f4a3f8c",
+					"name": "",
+					"overrides": {
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.3524300000000007
+								],
+								"r": 0.15
+							}
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.15431000000000109
+								],
+								"r": 0.15
+							}
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.49593399999999915
+								],
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "d9e3c9c2-6498-4fdd-bbe1-7659352b5f0b",
+					"name": "",
+					"overrides": {
+						"89e203ac-70c2-4a6b-8572-039f02f0b4b8": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.3524300000000007
+								],
+								"r": 0.15
+							}
+						},
+						"9fd1229f-3952-446e-a2fc-3290b9c9a02d": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.15431000000000109
+								],
+								"r": 0.15
+							}
+						},
+						"c5329452-21db-4302-bb19-2d8e93afb1fb": {
+							"position": {
+								"v": [
+									0,
+									0,
+									0.49593399999999915
+								],
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "03919cbb-94b5-48d6-adc2-5aa1ba95ed48",
+			"scriptName": "info_UI"
+		},
+		{
+			"id": "3b75f36c-81d9-4757-b2f5-c5745d0e1e42",
+			"name": "lookForMain",
+			"elements": [
+				{
+					"id": "de0ec9c1-6566-44f6-90dc-056530ef2461",
+					"name": "inactive",
+					"overrides": {
+						"67a30573-b642-4d6e-8d3d-968a0aa12c81": {
+							"main": {
+								"v": {
+									"element": "37",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "inactive"
+				},
+				{
+					"id": "db179ada-a49d-48d1-8299-ce26487d71b3",
+					"name": "active",
+					"overrides": {
+						"67a30573-b642-4d6e-8d3d-968a0aa12c81": {
+							"main": {
+								"v": {
+									"element": "37",
+									"t": 801
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "active"
+				},
+				{
+					"id": "3562105b-b9c5-4b80-b266-8453ff95f8b3",
+					"name": "inactive to active",
+					"overrides": {
+						"67a30573-b642-4d6e-8d3d-968a0aa12c81": {
+							"main": [
+								{
+									"t": -1,
+									"v": {
+										"element": "37",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": {
+										"element": "37",
+										"t": 0
+									},
+									"i": "linear"
+								},
+								{
+									"t": 801,
+									"v": {
+										"element": "37",
+										"t": 801
+									},
+									"i": "tie"
+								},
+								{
+									"t": 803,
+									"v": {
+										"element": "37",
+										"t": 801
+									}
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "de0ec9c1-6566-44f6-90dc-056530ef2461",
+					"toState": "db179ada-a49d-48d1-8299-ce26487d71b3",
+					"length": 802,
+					"scriptName": "inactive_toactive"
+				}
+			],
+			"default": "de0ec9c1-6566-44f6-90dc-056530ef2461",
+			"scriptName": "lookForMain"
+		},
+		{
+			"id": "b9376c60-b927-4754-9c05-932c77780927",
+			"name": "lookForLoop",
+			"elements": [
+				{
+					"id": "4cd9f482-6d37-4c3b-a8ab-0481f8be3bc1",
+					"name": "loop",
+					"overrides": {
+						"67a30573-b642-4d6e-8d3d-968a0aa12c81": {
+							"X:loop": [
+								{
+									"t": -1,
+									"v": {
+										"element": "15",
+										"t": 0
+									},
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": {
+										"element": "15",
+										"t": 0
+									},
+									"i": "linear"
+								},
+								{
+									"t": 6499,
+									"v": {
+										"element": "15",
+										"t": 6499
+									},
+									"i": "tie"
+								},
+								{
+									"t": 6501,
+									"v": {
+										"element": "15",
+										"t": 6499
+									}
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "7b986446-4c0b-4afc-a53f-60d1a332bbbf",
+					"toState": "52270eda-e843-40db-973c-5302dc471e51",
+					"length": 6500,
+					"scriptName": "loop",
+					"loop": true
+				},
+				{
+					"id": "7b986446-4c0b-4afc-a53f-60d1a332bbbf",
+					"name": "",
+					"overrides": {
+						"67a30573-b642-4d6e-8d3d-968a0aa12c81": {
+							"X:loop": {
+								"v": {
+									"element": "15",
+									"t": 0
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "52270eda-e843-40db-973c-5302dc471e51",
+					"name": "",
+					"overrides": {
+						"67a30573-b642-4d6e-8d3d-968a0aa12c81": {
+							"X:loop": {
+								"v": {
+									"element": "15",
+									"t": 6499
+								},
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "7056ad42-6902-4df7-9691-b4d7fe89aae5",
+			"scriptName": "lookForLoop"
+		}
+	],
+	"mediaFiles": [
+		{
+			"type": "objectType",
+			"title": "Plane",
+			"id": "plane",
+			"etag": "1dd69ff7b38bb4de98db325cb2207801",
+			"scriptName": "Plane",
+			"locations": [
+				"Space Competition - Planets",
+				"Space Competition - Planets > BezierCircle",
+				"Space Competition - Planets > Sun",
+				"Space Competition - Planets > Earth",
+				"Space Competition - Planets > Moon",
+				"Space Competition - Planets > lookFor",
+				"Space Competition - Planets > Mars"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Universe Platform.png",
+			"filename": "09d5e925-c6a1-4c4d-8107-e3bbd9ff3b47.png",
+			"id": "8f4304de-f2cf-403d-874f-96ca61ddeb9b",
+			"contentWrapping": "riff-image",
+			"etag": "708a4d218bbdf620aba478edd521b682",
+			"scriptName": "Universe_Platform_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Sun Info.png",
+			"filename": "660f7e4e-ccd9-434d-a366-880dca28c009.png",
+			"id": "0b91f61d-a724-43fd-aff4-ab27ed9e57d9",
+			"contentWrapping": "riff-image",
+			"etag": "e0a8d06c811eddbe355053a61b549f2c",
+			"scriptName": "Sun_Info_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Sun Info Shadow.png",
+			"filename": "3201ddcc-f71f-4af1-8e7d-2d6c223f0f19.png",
+			"id": "bfd6d139-0fb1-4049-8659-c1486aa08ab5",
+			"contentWrapping": "riff-image",
+			"etag": "49eefe4f120187d58cfb1cc5e9806218",
+			"scriptName": "Sun_InfoShadow_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Earth Info.png",
+			"filename": "89d44078-e751-4772-ae4d-b75227aba249.png",
+			"id": "eb6902ab-0019-4a93-8893-f18d95289841",
+			"contentWrapping": "riff-image",
+			"etag": "9e6a80bdab55f24f7749b3c4edba2a35",
+			"scriptName": "Earth_Info_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Earth Info Shadow.png",
+			"filename": "bf7f0134-646f-4c33-b3ce-da2409debb99.png",
+			"id": "04692adc-7403-40b0-8c53-5857c4b68f8f",
+			"contentWrapping": "riff-image",
+			"etag": "56c3294441fd3e23a4b2b5859a7fd906",
+			"scriptName": "Earth_InfoShadow_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Mars Info Shadow.png",
+			"filename": "97a5d300-be56-43a8-a0ff-2f46aa7b9e55.png",
+			"id": "9a01847a-0476-4453-b6f1-d2b501631dd3",
+			"contentWrapping": "riff-image",
+			"etag": "cb262c41c5439a1b08d01be2d8807037",
+			"scriptName": "Mars_InfoShadow_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Mars Info.png",
+			"filename": "5770675b-d1f1-40ec-8c2e-8ee6552f897e.png",
+			"id": "27d36fd6-7b38-423f-a340-00d6101fd6a8",
+			"contentWrapping": "riff-image",
+			"etag": "7ab528dc4767da121ba46abfeae3091d",
+			"scriptName": "Mars_Info_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Info Icon Shadow.png",
+			"filename": "12ad0a1c-9d3f-4385-92ef-57ac472b658f.png",
+			"id": "b42cdd05-7aa4-49fd-8aa5-5d0a0eb04d88",
+			"contentWrapping": "riff-image",
+			"etag": "e87e9be124d480d840dc3045461c226d",
+			"scriptName": "Info_IconShadow_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Info Icon.png",
+			"filename": "b25fbfbd-137c-4dbf-8a72-b6b5e7ef3eed.png",
+			"id": "7e1ce92a-b61c-4078-bb14-660eb4b8f6b7",
+			"contentWrapping": "riff-image",
+			"etag": "07d682dae4daff9373d6ca1af62dd09d",
+			"scriptName": "Info_Icon_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "target",
+			"title": "Target Image.jpg.zpt",
+			"id": "50e1f44f-ab26-40a7-8faa-8311d448d8e6",
+			"filename": "e0b96c1a-d7a0-4d30-979d-f4787ee685be.zpt",
+			"etag": "3102b27c16cd82808d067395661e53d7",
+			"contentWrapping": "riff-target",
+			"scriptName": "Target_Image_jpgzpt",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Back.png",
+			"filename": "7f7ee07d-e06d-44d5-baad-27f5ca4dd271.png",
+			"id": "aec2bd20-c464-4071-ac3d-94601f5fb56d",
+			"contentWrapping": "riff-image",
+			"etag": "87b59abc1ab9588c378f2399bca52d21",
+			"scriptName": "Back_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Back Shadow.png",
+			"filename": "bd50d9d2-177f-4965-a44f-22856fa3ee81.png",
+			"id": "656e3dd4-d53e-4640-bc2b-df91269c9c92",
+			"contentWrapping": "riff-image",
+			"etag": "2842243483a147124edb7efbde8fa40d",
+			"scriptName": "Back_Shadow_png",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Target Image Miniature.jpg",
+			"filename": "b638e6c7-8570-4010-9aa2-788d43746e68.jpg",
+			"id": "d4c47d8e-7787-48b0-9d85-8c430283079e",
+			"contentWrapping": "riff-image",
+			"etag": "4f6f75ac3ae090cc084add0555df0782",
+			"scriptName": "Target_ImageMiniature_jpg",
+			"locations": [
+				"Space Competition - Planets"
+			],
+			"inUse": true
+		}
+	],
+	"symbolDefinitions": [
+		{
+			"id": "BezierCircle",
+			"src": "BezierCircle",
+			"scriptName": "BezierCircle"
+		},
+		{
+			"id": "Sun",
+			"src": "Sun",
+			"scriptName": "Sun"
+		},
+		{
+			"id": "Earth",
+			"src": "Earth",
+			"scriptName": "Earth"
+		},
+		{
+			"id": "Moon",
+			"src": "Moon",
+			"scriptName": "Moon"
+		},
+		{
+			"id": "lookFor",
+			"src": "lookFor",
+			"scriptName": "lookFor"
+		},
+		{
+			"id": "Mars",
+			"src": "Mars",
+			"scriptName": "Mars"
+		}
+	],
+	"exports": {},
+	"attachmentPoints": [],
+	"constructionProperties": {},
+	"notes": {
+		"content": "",
+		"showOnSymbolOpen": false
+	},
+	"symbolProperties": {
+		"editorVersion": 12,
+		"backgroundColor": [
+			0.9,
+			0.9,
+			0.45,
+			1
+		],
+		"objectColours": {
+			"0": [
+				0.6000000000000001,
+				0.8,
+				0.8,
+				1
+			],
+			"1": [
+				0.6000000000000001,
+				0.8,
+				0.8,
+				1
+			],
+			"3": [
+				0.6000000000000001,
+				0.8,
+				0.4,
+				1
+			],
+			"4": [
+				0.6000000000000001,
+				0.4,
+				0.4,
+				1
+			],
+			"6": [
+				0.6000000000000001,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"7": [
+				0.6000000000000001,
+				0.4,
+				0.8,
+				1
+			],
+			"10": [
+				0.4,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"12": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"13": [
+				0.4,
+				0.4,
+				0.4,
+				1
+			],
+			"14": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"f2dbe1ef-80cf-4442-8e00-5b6ff73d1c14": [
+				0.6000000000000001,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"76dd8025-896e-4956-8ebb-aa42148574be": [
+				0.8,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"cf00addb-f456-4260-b910-76b989e65ec2": [
+				0.8,
+				0.4,
+				0.8,
+				1
+			],
+			"9cb7774e-cc1b-4dc2-854f-d0dc82602c51": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"66b846d7-6d9c-4f36-8ba9-057482062a14": [
+				0.8,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"e0a1a9d5-76a6-4599-b637-939f33c1ded5": [
+				0.4,
+				0.4,
+				0.4,
+				1
+			],
+			"e203cad6-a31a-45e8-814d-c4b64f551be4": [
+				0.8,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"90129008-8807-447d-90f9-95f435b70c19": [
+				0.4,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"d4789f23-2ed3-4726-a472-4cd4fc43937b": [
+				0.6000000000000001,
+				0.4,
+				0.8,
+				1
+			],
+			"61883904-3144-4644-b79c-1ce7f5a4dff3": [
+				0.6000000000000001,
+				0.4,
+				0.4,
+				1
+			],
+			"69ed4d02-dcfc-445c-9ca9-136316ad1c4b": [
+				0.4,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"4cff4241-fb5a-43b4-a674-28e167db4724": [
+				0.8,
+				0.8,
+				0.4,
+				1
+			],
+			"654ad9c3-76d7-4629-9e3a-5c52a5da1b59": [
+				0.8,
+				0.4,
+				0.4,
+				1
+			],
+			"e7a0495b-0579-4442-9fc6-322344a0a752": [
+				0.4,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"40bef972-62ab-48c1-b749-2526ade5682d": [
+				0.6000000000000001,
+				0.4,
+				0.8,
+				1
+			],
+			"5f1493a7-ead9-4bd9-ba47-7a768edc4711": [
+				0.4,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"9ebcb158-a338-4ac2-a72c-a3d851463ffe": [
+				0.8,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"159658df-6f46-4b2d-afb4-1840b432b08d": [
+				0.6000000000000001,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"91ab4baf-03ca-490d-a916-b090ef95091a": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"4b9f043a-62b7-44bd-ae04-896d61364f07": [
+				0.4,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"3b2655ec-d9a9-4f6c-8251-c91bf9242fce": [
+				0.4,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"3fb9f3fd-22f4-4017-b45e-34bba6896789": [
+				0.4,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"224ee1c6-35fc-407d-ba5e-d5689ae50463": [
+				0.6000000000000001,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"3c6bda8f-dccd-46b5-98be-18fb373f998b": [
+				0.8,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"01ce1008-e018-431e-a77c-6f62fb00f9d1": [
+				0.8,
+				0.8,
+				0.4,
+				1
+			],
+			"a6e7accf-9f8c-46e8-b4d2-4d6a8279b01e": [
+				0.4,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"4da433e2-c7e8-4cb2-869e-08b60723c92a": [
+				0.6000000000000001,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"d7194f0f-4fb0-4859-bb48-26954d168aa2": [
+				0.4,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"6c8f2cd2-3d3a-4280-a4cb-d652579f632b": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"85037fb5-00dc-4ab4-a12a-0127cac1e262": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"6cbce07a-4c29-458e-905b-4e32e53f9a56": [
+				0.6000000000000001,
+				0.4,
+				0.8,
+				1
+			],
+			"7971bff0-4e71-43c9-82d8-33de1ddfc6cb": [
+				0.8,
+				0.4,
+				0.4,
+				1
+			],
+			"fedc27a7-0f09-4e4e-8e92-23613a4e98b1": [
+				0.8,
+				0.4,
+				0.4,
+				1
+			],
+			"276d698c-7a69-4507-a787-0c64b7701055": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"4c29a1df-52f1-47b3-95e1-188255fb1fe7": [
+				0.8,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"7acb15b7-50a0-4c9f-9a61-0816f2afae06": [
+				0.6000000000000001,
+				0.8,
+				0.4,
+				1
+			],
+			"59f75a4d-4c1d-4982-935c-4f025ade79a9": [
+				0.8,
+				0.8,
+				0.4,
+				1
+			],
+			"930b5fea-459f-4ea1-a1dd-382393d310df": [
+				0.8,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"ab066345-17a2-4f94-b4d2-42a37352838a": [
+				0.6000000000000001,
+				0.4,
+				0.8,
+				1
+			],
+			"1e94158a-7695-4104-a50f-854e8e5728f5": [
+				0.6000000000000001,
+				0.8,
+				0.4,
+				1
+			],
+			"e39b5413-f1bc-4e8c-afbe-3e492398b5ce": [
+				0.4,
+				0.8,
+				0.8,
+				1
+			],
+			"2291c8ae-3673-4ba7-a4ba-596388437d13": [
+				0.4,
+				0.8,
+				0.4,
+				1
+			],
+			"22d1094c-7416-4baf-a703-069bad94c997": [
+				0.8,
+				0.8,
+				0.8,
+				1
+			],
+			"540b8bbe-4000-4daf-bed6-0803964e5f77": [
+				0.6000000000000001,
+				0.4,
+				0.8,
+				1
+			],
+			"802f01d2-004b-4893-88a3-cede848bc637": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"9fd17af5-f436-4f9e-bc46-e791f653f719": [
+				0.8,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"a08c6ee3-f976-4064-b9de-076e524b3b75": [
+				0.6000000000000001,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"c5329452-21db-4302-bb19-2d8e93afb1fb": [
+				0.6000000000000001,
+				0.4,
+				0.4,
+				1
+			],
+			"399ecd51-b392-4d02-a48c-28b9eea6faca": [
+				0.6000000000000001,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"ade39d1b-af67-42ce-bf7e-822a0259c955": [
+				0.8,
+				0.4,
+				0.8,
+				1
+			],
+			"89e203ac-70c2-4a6b-8572-039f02f0b4b8": [
+				0.4,
+				0.8,
+				0.4,
+				1
+			],
+			"779bc99f-529c-4d14-8c0a-58361a4c1a80": [
+				0.6000000000000001,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"5d4f264b-dd20-4210-a08f-824f294b6686": [
+				0.8,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"9fd1229f-3952-446e-a2fc-3290b9c9a02d": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"8630c6c6-74a1-449b-a992-c040b6cc10ec": [
+				0.8,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"d0ee2cd4-2902-4502-9ae3-93c507c55294": [
+				0.8,
+				0.4,
+				0.4,
+				1
+			],
+			"868dd948-65e3-450f-8994-7076fa6d16e0": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"3b8ac946-a604-4b9a-a573-689f020f2688": [
+				0.4,
+				0.4,
+				0.4,
+				1
+			],
+			"81482113-cbe8-4f8b-ae8e-dbd779400f56": [
+				0.8,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"098b3ed5-a55c-4ebb-991e-d87d6f14c842": [
+				0.8,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"afe0c821-c10f-4dae-8c0b-308318fa059d": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"6f2b440b-8db8-401b-a756-08f7aa34705c": [
+				0.4,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"8bca1928-865a-436e-801d-af2bff9ebae9": [
+				0.8,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"51500f5b-624d-4da3-8654-292a276e766c": [
+				0.4,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"67a30573-b642-4d6e-8d3d-968a0aa12c81": [
+				0.6000000000000001,
+				0.8,
+				0.8,
+				1
+			],
+			"3fe2a3f8-e507-47c5-ab7f-f47445af24b9": [
+				0.6000000000000001,
+				0.8,
+				0.4,
+				1
+			],
+			"817168e5-fb70-4640-b852-3201635906e6": [
+				0.8,
+				0.4,
+				0.4,
+				1
+			],
+			"ae29efb5-7185-401d-9de5-c33f930702e4": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"a1dbcee5-55d0-4014-8be8-e8594615ac04": [
+				0.4,
+				0.6000000000000001,
+				0.4,
+				1
+			],
+			"b17634f5-d615-4a45-b886-af0bf53d48a2": [
+				0.8,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"7fcc9f56-8135-432d-bafe-b39697ecc431": [
+				0.8,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"7eef3c43-47e6-4548-a7bb-83668f880184": [
+				0.8,
+				0.4,
+				0.8,
+				1
+			],
+			"3bd33418-d231-4920-9e94-a8e50cca2c86": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			]
+		}
+	},
+	"share": {},
+	"collapsed": {
+		"-1-base": false
+	},
+	"selectedTargetId": null,
+	"eventEditor": {
+		"12": {
+			"cursor": {
+				"row": 11,
+				"column": 3
+			}
+		},
+		"13": {
+			"cursor": {
+				"row": 7,
+				"column": 13
+			}
+		}
+	}
+}

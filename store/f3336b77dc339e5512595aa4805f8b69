@@ -1,0 +1,23 @@
+{
+	"0": {
+		"position": [
+			0,
+			0,
+			-5
+		],
+		"rotation": [
+			0,
+			0,
+			0
+		],
+		"upright": true
+	},
+	"selectedTargetId": "0",
+	"timelineEditorProperties": {
+		"2": 1,
+		"5": 1
+	},
+	"collapsed": {
+		"-1-base": false
+	}
+}

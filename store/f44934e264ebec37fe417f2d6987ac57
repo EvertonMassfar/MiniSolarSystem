@@ -1,0 +1,386 @@
+{
+	"hierarchy": {
+		"nodeType": "Root",
+		"id": "0",
+		"name": "root",
+		"children": [
+			{
+				"id": "65e15b91-d6d1-4c14-bdb5-812302199c1b",
+				"name": "Mars.pod0",
+				"nodeType": "Object",
+				"children": [],
+				"parameters": {
+					"type": "ac76b0a0-ba56-47a2-adc6-2a346dd97711",
+					"layerMode": "full_3d",
+					"cullFaces": "none",
+					"scale": [
+						0.03855,
+						0.03855,
+						0.03855
+					],
+					"materials": [
+						"e290f889-79be-41cd-9de6-d9c4c8446045",
+						"e4861f3b-e858-44e0-b70d-5bcafe4e7edf",
+						"def8d48f-a989-4021-b7ae-fb781d03ad77",
+						"9269f070-0bad-4762-9baa-3d96f832ca75"
+					]
+				},
+				"scriptName": "Mars_pod0"
+			},
+			{
+				"id": "bf20f012-e284-4fd9-ac8d-531d1223aa8c",
+				"nodeType": "Group",
+				"name": "Materials",
+				"scriptName": "Materials",
+				"parameters": {},
+				"children": [
+					{
+						"id": "e290f889-79be-41cd-9de6-d9c4c8446045",
+						"nodeType": "Material",
+						"name": "Earth",
+						"scriptName": "Earth",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "d995b1ff-2752-4b14-8ce2-2cb258de29f6"
+						},
+						"children": []
+					},
+					{
+						"id": "e4861f3b-e858-44e0-b70d-5bcafe4e7edf",
+						"nodeType": "Material",
+						"name": "EarthClouds",
+						"scriptName": "EarthClouds",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "9c62da8e-d036-4aa7-bcb9-5e22175fc0c7"
+						},
+						"children": []
+					},
+					{
+						"id": "def8d48f-a989-4021-b7ae-fb781d03ad77",
+						"nodeType": "Material",
+						"name": "shadow",
+						"scriptName": "shadow",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "d7be8511-b853-4113-9c55-48967c456663"
+						},
+						"children": []
+					},
+					{
+						"id": "9269f070-0bad-4762-9baa-3d96f832ca75",
+						"nodeType": "Material",
+						"name": "glow",
+						"scriptName": "glow",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "b4f9bde9-4406-462e-963b-f68adb144cdc"
+						},
+						"children": []
+					}
+				]
+			}
+		],
+		"parameters": {
+			"relativeTo": []
+		},
+		"scriptName": "root"
+	},
+	"controllers": [
+		{
+			"id": "9f2c2913-cb68-4e9d-83de-dbb93242c99c",
+			"name": "animations",
+			"elements": [
+				{
+					"id": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+					"name": "full",
+					"overrides": {
+						"65e15b91-d6d1-4c14-bdb5-812302199c1b": {
+							"animationFrame": [
+								{
+									"t": -1,
+									"v": 0,
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": 0,
+									"i": "linear"
+								},
+								{
+									"t": 41624,
+									"v": 998,
+									"i": "tie"
+								},
+								{
+									"t": 41626,
+									"v": 998
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "fb3ad235-e3b3-4094-9b7c-acab662dff52",
+					"toState": "e25dee7e-ab17-4a6b-a3ee-efbc419036f4",
+					"length": 41625,
+					"scriptName": "full"
+				},
+				{
+					"id": "fb3ad235-e3b3-4094-9b7c-acab662dff52",
+					"name": "",
+					"overrides": {
+						"65e15b91-d6d1-4c14-bdb5-812302199c1b": {
+							"animationFrame": {
+								"v": 0,
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "e25dee7e-ab17-4a6b-a3ee-efbc419036f4",
+					"name": "",
+					"overrides": {
+						"65e15b91-d6d1-4c14-bdb5-812302199c1b": {
+							"animationFrame": {
+								"v": 998,
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+			"scriptName": "animations"
+		}
+	],
+	"mediaFiles": [
+		{
+			"type": "objectType",
+			"title": "Plane",
+			"id": "Plane",
+			"contentWrapping": null,
+			"etag": "1dd69ff7b38bb4de98db325cb2207801",
+			"scriptName": "Plane"
+		},
+		{
+			"type": "objectType",
+			"title": "Mars.pod",
+			"filename": "df461af6-b1b6-4815-a4ca-ac90a2a51d87.pod",
+			"id": "ac76b0a0-ba56-47a2-adc6-2a346dd97711",
+			"contentWrapping": null,
+			"etag": "a50acc1a6676dc06ff4fe3ea8f8f024a",
+			"scriptName": "Mars_pod",
+			"locations": [
+				"Planets > Mars"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Mars_Texture.jpg",
+			"filename": "518e3322-2638-40c1-acdc-b13491cc432f.jpg",
+			"id": "d995b1ff-2752-4b14-8ce2-2cb258de29f6",
+			"contentWrapping": "riff-image",
+			"etag": "c1805a49562d9360ec606164b255189d",
+			"scriptName": "Mars_Texture_jpg",
+			"locations": [
+				"Planets > Mars"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "mars_Clouds.png",
+			"filename": "5e4bc630-bbb7-4095-ab56-635daf5ae2df.png",
+			"id": "9c62da8e-d036-4aa7-bcb9-5e22175fc0c7",
+			"contentWrapping": "riff-image",
+			"etag": "3a163789c05851fc19380523a177e429",
+			"scriptName": "mars_Clouds_png",
+			"locations": [
+				"Planets > Mars"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Mars_Glow.png",
+			"filename": "e829c74d-00d7-4706-b4e2-783f5ef85b39.png",
+			"id": "b4f9bde9-4406-462e-963b-f68adb144cdc",
+			"contentWrapping": "riff-image",
+			"etag": "b072556aa897a075af5d0b8092b824f4",
+			"scriptName": "Mars_Glow_png",
+			"locations": [
+				"Planets > Mars"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "day_night.png",
+			"filename": "70325d61-316c-4dc1-ae3b-27c19ca1a019.png",
+			"id": "d7be8511-b853-4113-9c55-48967c456663",
+			"contentWrapping": "riff-image",
+			"etag": "b4323b25f7a4b246189ea8cbdce2970f",
+			"scriptName": "day_night_png"
+		}
+	],
+	"symbolDefinitions": [],
+	"exports": {
+		"7a81992c-85df-4d78-9e5c-252ad1a49102": {
+			"name": "animations",
+			"forwardId": "9f2c2913-cb68-4e9d-83de-dbb93242c99c",
+			"type": "ControllerValue",
+			"forwardParameter": "active",
+			"defaultValue": {
+				"element": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+				"t": 0
+			},
+			"scriptName": "animations"
+		}
+	},
+	"attachmentPoints": [],
+	"constructionProperties": {
+		"node": {
+			"id": "65e15b91-d6d1-4c14-bdb5-812302199c1b",
+			"name": "Mars.pod0"
+		},
+		"textures": [
+			"Mars_Texture.jpg",
+			"mars_Clouds.png",
+			"day_night.png",
+			"Mars_Glow.png"
+		],
+		"animations": {
+			"totalFrames": 999,
+			"defaultStart": 0,
+			"defaultEnd": 998,
+			"data": [
+				{
+					"id": "9ad6b4a5-210c-4893-b3b0-5333995c72b1",
+					"title": "full",
+					"start": 0,
+					"end": 998,
+					"fps": 24
+				}
+			]
+		},
+		"bounds": {
+			"scale": 0.03855,
+			"original": [
+				[
+					-23.6096,
+					-21.3076,
+					-23.48
+				],
+				[
+					23.6861,
+					25.9415,
+					23.5566
+				]
+			]
+		},
+		"nodeTree": {
+			"ID": -1,
+			"parentID": -2,
+			"name": "SceenRoot",
+			"children": [
+				{
+					"ID": 0,
+					"parentID": -1,
+					"name": "persp",
+					"children": []
+				},
+				{
+					"ID": 1,
+					"parentID": -1,
+					"name": "group1",
+					"children": []
+				}
+			]
+		},
+		"exposedNodes": []
+	},
+	"notes": {
+		"content": "",
+		"showOnSymbolOpen": false
+	},
+	"symbolProperties": {
+		"editorVersion": 12,
+		"backgroundColor": [
+			0.9999999999999999,
+			0.49999999999999994,
+			0.75,
+			1
+		],
+		"objectColours": {
+			"0": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"65e15b91-d6d1-4c14-bdb5-812302199c1b": [
+				0.8,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"bf20f012-e284-4fd9-ac8d-531d1223aa8c": [
+				0.6000000000000001,
+				0.6000000000000001,
+				0.6000000000000001,
+				1
+			],
+			"e290f889-79be-41cd-9de6-d9c4c8446045": [
+				0.4,
+				0.8,
+				0.4,
+				1
+			],
+			"e4861f3b-e858-44e0-b70d-5bcafe4e7edf": [
+				0.8,
+				0.8,
+				0.6000000000000001,
+				1
+			],
+			"def8d48f-a989-4021-b7ae-fb781d03ad77": [
+				0.8,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"9269f070-0bad-4762-9baa-3d96f832ca75": [
+				0.6000000000000001,
+				0.4,
+				0.4,
+				1
+			]
+		}
+	},
+	"share": {}
+}

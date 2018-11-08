@@ -1,0 +1,176 @@
+{
+	"hierarchy": {
+		"nodeType": "Root",
+		"id": "0",
+		"name": "root",
+		"children": [
+			{
+				"id": "65abea6a-ca9d-45be-b571-67840920c419",
+				"name": "BezierCircle",
+				"nodeType": "Bezier",
+				"children": [],
+				"parameters": {
+					"points": [
+						[
+							[
+								0,
+								1,
+								0
+							],
+							[
+								0.55191502449,
+								1,
+								0
+							],
+							[
+								1,
+								0.55191502449,
+								0
+							],
+							[
+								1,
+								0,
+								0
+							]
+						],
+						[
+							[
+								1,
+								0,
+								0
+							],
+							[
+								1,
+								-0.55191502449,
+								0
+							],
+							[
+								0.55191502449,
+								-1,
+								0
+							],
+							[
+								0,
+								-1,
+								0
+							]
+						],
+						[
+							[
+								0,
+								-1,
+								0
+							],
+							[
+								-0.55191502449,
+								-1,
+								0
+							],
+							[
+								-1,
+								-0.55191502449,
+								0
+							],
+							[
+								-1,
+								0,
+								0
+							]
+						],
+						[
+							[
+								-1,
+								0,
+								0
+							],
+							[
+								-1,
+								0.55191502449,
+								0
+							],
+							[
+								-0.55191502449,
+								1,
+								0
+							],
+							[
+								0,
+								1,
+								0
+							]
+						]
+					]
+				},
+				"scriptName": "BezierCircle"
+			}
+		],
+		"parameters": {
+			"relativeTo": []
+		},
+		"scriptName": "root"
+	},
+	"controllers": [],
+	"mediaFiles": [
+		{
+			"type": "objectType",
+			"title": "Plane",
+			"id": "Plane",
+			"contentWrapping": null,
+			"etag": "1dd69ff7b38bb4de98db325cb2207801",
+			"scriptName": "Plane"
+		}
+	],
+	"symbolDefinitions": [],
+	"exports": {
+		"c93f0035-008d-4f65-a6c2-4c86ad3c043f": {
+			"name": "BezierCircleDistance",
+			"forwardId": "65abea6a-ca9d-45be-b571-67840920c419",
+			"forwardParameter": "distance",
+			"defaultValue": 0,
+			"type": "Float",
+			"scriptName": "BezierCircleDistance"
+		}
+	},
+	"attachmentPoints": [
+		{
+			"forwardId": "65abea6a-ca9d-45be-b571-67840920c419",
+			"name": "BezierObject",
+			"scriptName": "BezierObject"
+		}
+	],
+	"constructionProperties": {},
+	"notes": {
+		"content": "",
+		"showOnSymbolOpen": false
+	},
+	"symbolProperties": {
+		"editorVersion": 13,
+		"backgroundColor": [
+			0.28125,
+			1,
+			0.8437500000000001,
+			1
+		],
+		"objectColours": {
+			"0": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"38227dd0-0b94-448b-81de-2b053522d0f7": [
+				0.4,
+				0.8,
+				0.8,
+				1
+			],
+			"65abea6a-ca9d-45be-b571-67840920c419": [
+				0.4,
+				0.4,
+				0.8,
+				1
+			]
+		}
+	},
+	"share": {}
+}

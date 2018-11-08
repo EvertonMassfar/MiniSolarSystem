@@ -1,0 +1,36 @@
+{
+	"hierarchy": {
+		"nodeType": "Root",
+		"id": "0",
+		"name": "root",
+		"children": [],
+		"parameters": {
+			"relativeTo": [],
+			"fillDepthBuffer": "false",
+			"depthTest": "false"
+		}
+	},
+	"controllers": [],
+	"mediaFiles": [],
+	"symbolDefinitions": [],
+	"exports": {},
+	"notes": "",
+	"symbolProperties": {
+		"editorVersion": 5,
+		"backgroundColor": [
+			0.8437500000000001,
+			1,
+			0.28125,
+			1
+		],
+		"objectColours": {
+			"0": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			]
+		}
+	},
+	"share": {}
+}

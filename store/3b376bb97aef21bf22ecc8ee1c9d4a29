@@ -1,0 +1,353 @@
+{
+	"hierarchy": {
+		"nodeType": "Root",
+		"id": "0",
+		"name": "root",
+		"children": [
+			{
+				"id": "10fe8a3d-48c2-4efa-8446-4c567c447bb9",
+				"name": "Sun.pod0",
+				"nodeType": "Object",
+				"children": [],
+				"parameters": {
+					"type": "30b8aebe-ac45-4094-a5b2-8238cf1847bf",
+					"layerMode": "full_3d",
+					"cullFaces": "none",
+					"scale": [
+						0.03848,
+						0.03848,
+						0.03848
+					],
+					"materials": [
+						"59f6cc17-fcff-4b54-8b09-8edd65362c92",
+						"4082f055-be48-4417-aed6-79fc3fe8bac1",
+						"eae67ad0-3d1f-4ab9-86ff-1093edcf4ac4"
+					]
+				},
+				"scriptName": "Sun_pod0"
+			},
+			{
+				"id": "6586ab5d-5d69-401d-891f-f0db77a20970",
+				"nodeType": "Group",
+				"name": "Materials",
+				"scriptName": "Materials",
+				"parameters": {},
+				"children": [
+					{
+						"id": "59f6cc17-fcff-4b54-8b09-8edd65362c92",
+						"nodeType": "Material",
+						"name": "Sun",
+						"scriptName": "Sun",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "6072be4e-0c56-4351-8fa4-29d8ecfbb4c5"
+						},
+						"children": []
+					},
+					{
+						"id": "4082f055-be48-4417-aed6-79fc3fe8bac1",
+						"nodeType": "Material",
+						"name": "EarthClouds",
+						"scriptName": "EarthClouds",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "902d5e16-912a-4420-a7c7-d9b9b09d06e8"
+						},
+						"children": []
+					},
+					{
+						"id": "eae67ad0-3d1f-4ab9-86ff-1093edcf4ac4",
+						"nodeType": "Material",
+						"name": "glow",
+						"scriptName": "glow",
+						"parameters": {
+							"color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"skin": "f755c151-9d2a-4335-8ee3-16f79af25c8a"
+						},
+						"children": []
+					}
+				]
+			}
+		],
+		"parameters": {
+			"relativeTo": []
+		},
+		"scriptName": "root"
+	},
+	"controllers": [
+		{
+			"id": "8ec0276b-3114-452b-a8f3-0dcd03f9e213",
+			"name": "animations",
+			"elements": [
+				{
+					"id": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+					"name": "full",
+					"overrides": {
+						"10fe8a3d-48c2-4efa-8446-4c567c447bb9": {
+							"animationFrame": [
+								{
+									"t": -1,
+									"v": 0,
+									"i": "tie"
+								},
+								{
+									"t": 0,
+									"v": 0,
+									"i": "linear"
+								},
+								{
+									"t": 41624,
+									"v": 998,
+									"i": "tie"
+								},
+								{
+									"t": 41626,
+									"v": 998
+								}
+							]
+						}
+					},
+					"type": "timeline",
+					"fromState": "09fd06d1-6134-40b6-a87d-e5ce17de23a9",
+					"toState": "d5c3bf35-f32c-4440-8c3d-8b42590c3766",
+					"length": 41625,
+					"scriptName": "full"
+				},
+				{
+					"id": "09fd06d1-6134-40b6-a87d-e5ce17de23a9",
+					"name": "",
+					"overrides": {
+						"10fe8a3d-48c2-4efa-8446-4c567c447bb9": {
+							"animationFrame": {
+								"v": 0,
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node"
+				},
+				{
+					"id": "d5c3bf35-f32c-4440-8c3d-8b42590c3766",
+					"name": "",
+					"overrides": {
+						"10fe8a3d-48c2-4efa-8446-4c567c447bb9": {
+							"animationFrame": {
+								"v": 998,
+								"r": 0.15
+							}
+						}
+					},
+					"type": "state",
+					"scriptName": "node0"
+				}
+			],
+			"default": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+			"scriptName": "animations"
+		}
+	],
+	"mediaFiles": [
+		{
+			"type": "objectType",
+			"title": "Plane",
+			"id": "Plane",
+			"contentWrapping": null,
+			"etag": "1dd69ff7b38bb4de98db325cb2207801",
+			"scriptName": "Plane"
+		},
+		{
+			"type": "objectType",
+			"title": "Sun.pod",
+			"filename": "c9cc8428-67b2-402e-9f15-6d6b24f09500.pod",
+			"id": "30b8aebe-ac45-4094-a5b2-8238cf1847bf",
+			"contentWrapping": null,
+			"etag": "7a189ad6435682bf52849faaf7e04821",
+			"scriptName": "Sun_pod",
+			"locations": [
+				"Space Competition - Planets > Sun"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Sun_Texture.jpg",
+			"filename": "104d9c99-1e4c-40af-a9ad-b0db99f89c46.jpg",
+			"id": "6072be4e-0c56-4351-8fa4-29d8ecfbb4c5",
+			"contentWrapping": "riff-image",
+			"etag": "b81275d5a030223b1d9c83166aa49e80",
+			"scriptName": "Sun_Texture_jpg",
+			"locations": [
+				"Space Competition - Planets > Sun"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Sun_Clouds.png",
+			"filename": "5356d8e7-0419-444b-b9c1-68d93900f78d.png",
+			"id": "902d5e16-912a-4420-a7c7-d9b9b09d06e8",
+			"contentWrapping": "riff-image",
+			"etag": "2919e7bd9d974fb073cecb39398da5c6",
+			"scriptName": "Sun_Clouds_png",
+			"locations": [
+				"Space Competition - Planets > Sun"
+			],
+			"inUse": true
+		},
+		{
+			"type": "image",
+			"title": "Sun_Glow.png",
+			"filename": "ac694d83-9b99-4da3-82a6-c214585cb2ca.png",
+			"id": "f755c151-9d2a-4335-8ee3-16f79af25c8a",
+			"contentWrapping": "riff-image",
+			"etag": "7070e02db794604e84deab701f286082",
+			"scriptName": "Sun_Glow_png",
+			"locations": [
+				"Space Competition - Planets > Sun"
+			],
+			"inUse": true
+		}
+	],
+	"symbolDefinitions": [],
+	"exports": {
+		"5db9ac3c-a738-4cc4-a6ad-f200181308c1": {
+			"name": "animations",
+			"forwardId": "8ec0276b-3114-452b-a8f3-0dcd03f9e213",
+			"type": "ControllerValue",
+			"forwardParameter": "active",
+			"defaultValue": {
+				"element": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+				"t": 0
+			},
+			"scriptName": "animations"
+		}
+	},
+	"attachmentPoints": [],
+	"constructionProperties": {
+		"node": {
+			"id": "10fe8a3d-48c2-4efa-8446-4c567c447bb9",
+			"name": "Sun.pod0"
+		},
+		"textures": [
+			"Sun_Texture.jpg",
+			"Sun_Clouds.png",
+			"Sun_Glow.png"
+		],
+		"animations": {
+			"totalFrames": 999,
+			"defaultStart": 0,
+			"defaultEnd": 998,
+			"data": [
+				{
+					"id": "8776904c-afa4-4b5f-8b45-573e3b70311f",
+					"title": "full",
+					"start": 0,
+					"end": 998,
+					"fps": 24
+				}
+			]
+		},
+		"bounds": {
+			"scale": 0.03848,
+			"original": [
+				[
+					-23.6506,
+					-21.3455,
+					-23.5208
+				],
+				[
+					23.7272,
+					25.9855,
+					23.5975
+				]
+			]
+		},
+		"nodeTree": {
+			"ID": -1,
+			"parentID": -2,
+			"name": "SceenRoot",
+			"children": [
+				{
+					"ID": 0,
+					"parentID": -1,
+					"name": "persp",
+					"children": []
+				},
+				{
+					"ID": 1,
+					"parentID": -1,
+					"name": "group1",
+					"children": []
+				}
+			]
+		},
+		"exposedNodes": []
+	},
+	"notes": {
+		"content": "",
+		"showOnSymbolOpen": false
+	},
+	"symbolProperties": {
+		"editorVersion": 12,
+		"backgroundColor": [
+			0.8437500000000001,
+			0.8437500000000001,
+			0.5625,
+			1
+		],
+		"objectColours": {
+			"0": [
+				0.4,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"10fe8a3d-48c2-4efa-8446-4c567c447bb9": [
+				0.8,
+				0.6000000000000001,
+				0.8,
+				1
+			],
+			"6586ab5d-5d69-401d-891f-f0db77a20970": [
+				0.4,
+				0.4,
+				0.8,
+				1
+			],
+			"59f6cc17-fcff-4b54-8b09-8edd65362c92": [
+				0.8,
+				0.4,
+				0.6000000000000001,
+				1
+			],
+			"4082f055-be48-4417-aed6-79fc3fe8bac1": [
+				0.8,
+				0.8,
+				0.4,
+				1
+			],
+			"eae67ad0-3d1f-4ab9-86ff-1093edcf4ac4": [
+				0.8,
+				0.8,
+				0.8,
+				1
+			]
+		}
+	},
+	"share": {}
+}
